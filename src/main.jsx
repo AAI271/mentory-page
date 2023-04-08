@@ -2,15 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import {
-    createBrowserRouter,
+    createHashRouter, Link,
     RouterProvider,
 } from "react-router-dom";
 import './index.css'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
-        element: <div>Hello world!</div>,
+        element: <div>Hello world!???
+            <Link to="/about">about</Link>
+        </div>,
     },
     {
         path: "/about",
