@@ -1,0 +1,106 @@
+.process{
+    margin-bottom: 100px;
+    background-color: #ffba00;
+}
+.process h3{
+    padding-top: 50px;
+}
+
+.viewbox {
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    border-radius:0 0 5px 5px;
+}
+
+.steps {
+    background-color: white;
+    min-height: 200px;
+    display: flex;
+    width: 500%;
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.step  {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+
+.step p{
+    line-height: 20px;
+}
+
+.step-nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:50%;
+    margin: 0 auto;
+}
+.step-nav .step-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 100%;
+    background-color: #ddd;
+    text-align: center;
+    color: black;
+    margin-right: 1rem;
+    transition: background-color 0.5s;
+}
+.step-nav li{
+    width:80px;
+}
+.step-item.active {
+    background-color:#4555b9;
+    color: white;
+}
+.step hr{
+    width: 95%;
+    margin: 20px 0;
+}
+
+.box{
+    text-align: center;
+}
+.box ul{
+    padding-left: 15px;
+}
+.box__content{
+    text-align: left;
+    color: white;
+    border-radius: 15px;
+    background-color: #7B7B7B;
+    padding: 20px;
+    min-height: 300px;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box__stack-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box__stack{
+    background-color: white;
+    color: #3E63E7;
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.box__btn{
+    width: 60%;
+    margin: 0 auto;
+}
+.box__btn .my-btn{
+    color: black;
+    font-weight: 600;
+}

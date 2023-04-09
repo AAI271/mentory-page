@@ -1,0 +1,18 @@
+.order{
+    display: flex;
+    background-color: #939393;
+    color: white;
+}
+.order__text{
+    width: 90%;
+}
+.order__form{
+    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.order__form div{
+    display: flex;
+}

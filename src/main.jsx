@@ -6,23 +6,28 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import './index.css'
+import Header from "./components/header";
+import Home from "./pages/home";
+
 
 const router = createHashRouter([
     {
         path: "/",
-        element: <div>Hello world!???
-            <Link to="/about">about</Link>
-        </div>,
+        element: <Home/>,
     },
     {
         path: "/about",
-        element: <div>Hello About!</div>,
+        element: <Header/>,
     },
 ]);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+      <Header/>
       <RouterProvider router={router} />
+      <footer>
+
+      </footer>
   </React.StrictMode>,
 )

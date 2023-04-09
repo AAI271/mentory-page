@@ -1,0 +1,15 @@
+.about{
+    background: #3E63E7;
+    color: white;
+    display: flex;
+}
+
+.about__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about h3{
+    padding-top:10px;
+}
