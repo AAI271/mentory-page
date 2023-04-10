@@ -3,6 +3,7 @@ import About from "../../components/about";
 import Carousel from "../../components/carousel";
 import StepProcess from "../../components/step-process";
 import Order from "../../components/order";
+import StudentWorks from "../../components/studend-works";
 
 
 const Home = () => {
@@ -19,6 +20,9 @@ const Home = () => {
             </section>
             <section className="marginX">
                 <Order/>
+            </section>
+            <section className="marginX">
+                <StudentWorks/>
             </section>
         </main>
     );

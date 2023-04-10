@@ -2,6 +2,7 @@
     background: #3E63E7;
     color: white;
     display: flex;
+    padding: 50px;
 }
 
 .about__form{

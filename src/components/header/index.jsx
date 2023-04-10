@@ -11,23 +11,28 @@ const Header = () => {
     return (
         <header className="marginX">
             <div className="logo">
-                <img width="125" src={Logo} alt="burger"/>
+                <img width="125" src={Logo} alt="logo"/>
             </div>
             <nav className="nav">
                 <ul id="navbar">
                     <li className="nav-link">
-                        <a href="#income" onClick={toggleNav}>
-                            Входящие уведомления
+                        <a href="#">
+                            О нас
                         </a>
                     </li>
                     <li className="nav-link">
-                        <a href="#outcome" onClick="toggleNav()">
-                            Исходящие уведомления
+                        <a href="#">
+                            Обучение
                         </a>
                     </li>
                     <li className="nav-link">
-                        <a href="#instructions" onClick="toggleNav()">
-                            Инструкция call center
+                        <a href="#">
+                            Вакансии
+                        </a>
+                    </li>
+                    <li className="nav-link last">
+                        <a href="#">
+                            Записаться
                         </a>
                     </li>
                 </ul>

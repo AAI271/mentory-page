@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px 0;
 }
 header nav ul {
     list-style: none;
@@ -13,12 +13,19 @@ header nav ul {
     display: none;
 }
 .nav-link {
-    margin-left: 36px;
-    width: 150px;
+    width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
+}
+.nav-link.last{
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #3E63E7;
+}
+.nav-link.last a{
+    color: white;
 }
 .nav-link a {
     color: black;
@@ -70,8 +77,12 @@ header nav ul {
         margin: 20px 5%;
         width: 90%;
     }
-
-
+    .nav-link.last{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .nav-link img {
         margin-right: 16px;
         width: 20px;

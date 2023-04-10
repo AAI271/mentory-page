@@ -1,12 +1,31 @@
 import React from 'react';
 import "./index.css"
+import Logo from "../../assets/Logo.svg"
+import Telegram from "../../assets/Vector.svg"
+import Telegram1 from "../../assets/Vector (1).svg"
+import Telegram2 from "../../assets/Vector (2).svg"
+import Telegram3 from "../../assets/Vector (3).svg"
 
-const Index = () => {
+const Footer = () => {
     return (
-        <div>
-
-        </div>
+        <footer className="marginX">
+            <div className="footer__links">
+                <img width="160" src={Logo} alt="logo"/>
+                <div className="footer__contacts">
+                    <img src={Telegram} alt=""/>
+                    <img src={Telegram1} alt=""/>
+                    <img src={Telegram2} alt=""/>
+                    <img src={Telegram3} alt=""/>
+                </div>
+            </div>
+            <div className="footer__info">
+                <p>Connect</p>
+                <p>123-456-7890</p>
+                <p>123 Anywhere St., Any City, ST 12345 </p>
+                <p>hello@reallygreatsite.com</p>
+            </div>
+        </footer>
     );
 };
 
-export default Index;
+export default Footer;

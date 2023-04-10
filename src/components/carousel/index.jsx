@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./index.css"
+import {Link} from "react-router-dom";
 
 function Carousel() {
     const steps = [
@@ -12,6 +13,7 @@ function Carousel() {
                 stackList:['Swift','ООП','Objective-C','MVC','MVC']
             },
             lesson: {
+                name:"ios",
                 title: 'Курс по разработке IOS-приложений',
                 description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
                 stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
@@ -26,21 +28,7 @@ function Carousel() {
                 stackList:['Swift','ООП','Objective-C','MVC','MVC']
             },
             lesson:{
-                title: 'Курс по разработке IOS-приложений',
-                description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
-                stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
-            }
-
-        },
-        {
-            vacancy:{
-                title: 'IOS разработчик (middle)',
-                subtitle:'KazApple Ltd. ',
-                description: 'Ищем разработчика для создания и публикации IOS приложений, таких как Browser, Messenger, Cleaner, VPN, AdBlock.',
-                info:['Свободный график','800000 - 1100000 тг. в месяц'],
-                stackList:['Swift','ООП','Objective-C','MVC','MVC']
-            },
-            lesson:{
+                name:"ios",
                 title: 'Курс по разработке IOS-приложений',
                 description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
                 stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
@@ -56,6 +44,7 @@ function Carousel() {
                 stackList:['Swift','ООП','Objective-C','MVC','MVC']
             },
             lesson:{
+                name:"ios",
                 title: 'Курс по разработке IOS-приложений',
                 description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
                 stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
@@ -71,6 +60,23 @@ function Carousel() {
                 stackList:['Swift','ООП','Objective-C','MVC','MVC']
             },
             lesson:{
+                name:"ios",
+                title: 'Курс по разработке IOS-приложений',
+                description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
+                stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
+            }
+
+        },
+        {
+            vacancy:{
+                title: 'IOS разработчик (middle)',
+                subtitle:'KazApple Ltd. ',
+                description: 'Ищем разработчика для создания и публикации IOS приложений, таких как Browser, Messenger, Cleaner, VPN, AdBlock.',
+                info:['Свободный график','800000 - 1100000 тг. в месяц'],
+                stackList:['Swift','ООП','Objective-C','MVC','MVC']
+            },
+            lesson:{
+                name:"ios",
                 title: 'Курс по разработке IOS-приложений',
                 description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
                 stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
@@ -141,7 +147,9 @@ function Carousel() {
                                                     ))}
                                                 </div>
                                                 <div className="box__btn">
-                                                    <button className="my-btn" type="submit">Подробнее</button>
+                                                    <Link to={`/${step.lesson.name}`}>
+                                                        <button className="my-btn" type="submit">Подробнее</button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

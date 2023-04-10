@@ -1,0 +1,19 @@
+.student-works__item{
+    height: 200px;
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+.student-works__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #3E63E7;
+    color: white;
+}
+.student-works__text{
+    width: 50%;
+}
+

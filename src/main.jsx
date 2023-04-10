@@ -8,6 +8,8 @@ import {
 import './index.css'
 import Header from "./components/header";
 import Home from "./pages/home";
+import Footer from "./components/footer";
+import Lesson from "./pages/lesson";
 
 
 const router = createHashRouter([
@@ -16,8 +18,8 @@ const router = createHashRouter([
         element: <Home/>,
     },
     {
-        path: "/about",
-        element: <Header/>,
+        path: "/:about",
+        element: <Lesson/>,
     },
 ]);
 
@@ -26,8 +28,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <Header/>
       <RouterProvider router={router} />
-      <footer>
-
-      </footer>
+      <Footer/>
   </React.StrictMode>,
 )
