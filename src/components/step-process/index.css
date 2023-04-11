@@ -87,11 +87,25 @@
     padding: 15px;
     display: none;
 }
-
+.Thing-pointer{
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s;
+}
 .Thing-content p{
     margin-top: 20px;
 }
 @media only screen and (max-width: 650px) {
+    .step-process{
+        min-height: 0;
+        margin-bottom: 150px;
+    }
+    .container{
+        margin: 0;
+        padding: 50px;
+    }
     .Thing-info{
         display: none;
     }
@@ -104,6 +118,9 @@
     .Thing-dash-default{
         margin: 5px;
     }
+    .Thing-pointer{
+        display: block;
+    }
     .Thing{
         position: static;
     }
@@ -113,6 +130,9 @@
         top: 80px;
         width: 90%;
         margin: 0 auto;
-        background-color: #4555b9;
+        box-shadow: 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+        background-color: white;
     }
 }
