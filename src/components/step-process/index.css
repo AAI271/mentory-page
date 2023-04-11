@@ -27,8 +27,6 @@
 }
 .Thing-dash-default {
     position: absolute;
-    max-width: 672px;
-    width: 100%;
     height: 15px;
     z-index: 1;
     margin-left: 57px;
@@ -43,7 +41,7 @@
     z-index: 2;
 }
 
-.Thing-step {
+.Thing-step{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +54,11 @@
     z-index: 1;
     color: #fff;
     border-radius: 50%;
+    cursor: pointer;
+    transition: border 0.5s;
+}
+.Thing-step:hover{
+    border: 10px solid rgba(238, 238, 238, 0.5);
 }
 .Thing-step.first{
     width: 40px;
@@ -64,7 +67,7 @@
 }
 .Thing-info{
     text-align: center;
-    height: 50px;
+    height: 60px;
     width: 150px;
 }
 .Thing-info.last{
@@ -84,6 +87,32 @@
     padding: 15px;
     display: none;
 }
+
 .Thing-content p{
     margin-top: 20px;
+}
+@media only screen and (max-width: 650px) {
+    .Thing-info{
+        display: none;
+    }
+    .Thing-info.last{
+        display: none;
+    }
+    .Thing-dash{
+        margin: 5px;
+    }
+    .Thing-dash-default{
+        margin: 5px;
+    }
+    .Thing{
+        position: static;
+    }
+    .Thing-content{
+        left: 0;
+        right: 0;
+        top: 80px;
+        width: 90%;
+        margin: 0 auto;
+        background-color: #4555b9;
+    }
 }

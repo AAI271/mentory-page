@@ -1,0 +1,42 @@
+.lesson-for{
+    color: white;
+    padding: 35px;
+    background-color: #3E63E7;
+    min-height: 200px;
+    border-radius: 15px;
+}
+.lesson-for h3{
+    padding: 0 10px 20px 10px;
+}
+.lesson-for__content{
+    display: flex;
+    justify-content: space-between;
+}
+.lesson-for__box{
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    background-color: white;
+    min-height: 150px;
+}
+.lesson-for__box-title{
+    height: 45%;
+}
+@media only screen and (max-width: 960px) {
+    .lesson-for{
+        text-align: center;
+    }
+    .lesson-for h3{
+        font-size: 38px;
+    }
+    .lesson-for__content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lesson-for__box{
+        text-align: left;
+        margin: 10px 0;
+        width: 100%;
+    }
+}

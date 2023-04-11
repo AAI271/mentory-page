@@ -7,6 +7,7 @@
 }
 .student-works__content{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -16,4 +17,15 @@
 .student-works__text{
     width: 50%;
 }
-
+@media only screen and (max-width: 960px) {
+    .student-works__text{
+        padding: 20px 0;
+        width: 100%;
+    }
+    .student-works__item{
+        max-width: 100%;
+    }
+    .order__form div input{
+        width: 43%;
+    }
+}

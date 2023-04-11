@@ -1,0 +1,22 @@
+.lesson-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+.lesson-info__text{
+    width: 75%;
+}
+@media only screen and (max-width: 960px) {
+    .lesson-info{
+        margin: 0;
+        align-items: start;
+    }
+    .lesson-info h2{
+        margin-bottom: 50px;
+    }
+    .lesson-info__text{
+        width: 100%;
+    }
+
+}

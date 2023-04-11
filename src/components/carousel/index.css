@@ -40,7 +40,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:50%;
+    max-width: 484px;
+    width: 100%;
     margin: 0 auto;
 }
 .step-nav .step-item{
@@ -48,15 +49,12 @@
     align-items: center;
     justify-content: center;
     height: 1.5rem;
-    width: 100%;
+    width: 110%;
     background-color: #ddd;
     text-align: center;
     color: black;
     margin-right: 1rem;
     transition: background-color 0.5s;
-}
-.step-nav li{
-    width:80px;
 }
 .step-item.active {
     background-color:#4555b9;
@@ -103,4 +101,39 @@
 .box__btn .my-btn{
     color: black;
     font-weight: 600;
+}
+
+.wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.arrow-icon img{
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.arrow-icon img:hover{
+    transform: scale(1.2);
+}
+.arrow-icon-left{
+    left: -20px;
+}
+.arrow-icon-right{
+    right: -20px;
+}
+@media only screen and (max-width: 960px) {
+    .step{
+        flex-direction: column;
+    }
+    .arrow-icon img{
+        width: 25px;
+    }
+    .arrow-icon-left{
+        left: -10px;
+    }
+    .arrow-icon-right{
+        right: -10px;
+    }
 }

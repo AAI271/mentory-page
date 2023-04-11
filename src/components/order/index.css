@@ -1,19 +1,23 @@
 .order{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #939393;
     color: white;
     padding: 30px;
 }
 .order__text{
-    width: 90%;
+    width: 45%;
+    min-width: 370px;
 }
 .order__form{
-    margin-left: 50px;
-    width: 100%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
+    height: 200px;
+    max-height: 400px;
 }
 .order__form div{
     display: flex;
@@ -22,4 +26,12 @@
 .order__form div input{
     width: 40%;
 }
-
+@media only screen and (max-width: 960px) {
+    .order__text{
+        width: 100%;
+        min-width: 0;
+    }
+    .order__form div input{
+        width: 43%;
+    }
+}

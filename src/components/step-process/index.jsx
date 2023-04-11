@@ -5,9 +5,14 @@ function StepProcess() {
     useEffect(() => {
         const steps = document.querySelectorAll(".Thing-step");
         const line = document.querySelector(".Thing-dash");
+        const lineDefault = document.querySelector(".Thing-dash-default");
         const content = document.querySelectorAll(".Thing-content")
-        console.log(steps)
+        if(window.innerWidth<651){
+            content[0].style.display="block"
+        }
 
+
+        lineDefault.style.width=`${steps[3].parentNode.offsetLeft + steps[3].offsetWidth / 2}px`
         steps.forEach((step, index) => {
             step.addEventListener("click", () => {
                 line.style.transition = "width 0.5s ease-in-out";
@@ -18,9 +23,13 @@ function StepProcess() {
                 content.forEach((contn,ind)=>{
                     contn.style.display="none"
                 })
-                // Remove red color from all steps and line after animation completes
                 const timer = setTimeout(() => {
-                    content[index-1].style.display="block"
+                    if(index!==0) {
+                        content[index].style.display = "block"
+                    }
+                    else if(window.innerWidth<651){
+                        content[index].style.display = "block"
+                    }
                 }, 500);
 
                 return () => {
@@ -43,6 +52,10 @@ function StepProcess() {
                         <div className="Thing-info">
                             <h3>Ты здесь!</h3>
                         </div>
+                        <div className="Thing-content">
+                            <h3>Ты здесь!</h3>
+                            <p>Доработка функции мобильного приложения </p>
+                        </div>
                     </div>
                     <div className="Thing">
                         <div className="Thing-info">
@@ -56,7 +69,7 @@ function StepProcess() {
                             <p>Доработка функции мобильного приложения</p>
                         </div>
                         <div className="Thing-content">
-                            <h3>Midterm exam №1</h3>
+                            <h3>Midterm exam №2</h3>
                             <p>Доработка функции мобильного приложения </p>
                         </div>
                     </div>

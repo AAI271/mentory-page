@@ -18,6 +18,7 @@ const Footer = () => {
                     <img src={Telegram3} alt=""/>
                 </div>
             </div>
+            <hr/>
             <div className="footer__info">
                 <p>Connect</p>
                 <p>123-456-7890</p>
