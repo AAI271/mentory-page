@@ -11,6 +11,7 @@ function StepProcess() {
         const pointer = document.querySelectorAll(".Thing-pointer")
         if(window.innerWidth<651){
             content[0].style.display="block"
+            content[0].classList.add("visible")
         }
         pointer[0].style.opacity="1"
 
@@ -24,15 +25,18 @@ function StepProcess() {
                 line.style.backgroundColor = "red";
                 content.forEach((contn,ind)=>{
                     contn.style.display="none"
+                    contn.classList.remove("visible")
                     pointer[ind].style.opacity="0"
                 })
                 pointer[index].style.opacity="1"
                 const timer = setTimeout(() => {
                     if(index!==0) {
                         content[index].style.display = "block"
+                        content[index].classList.add("visible")
                     }
                     else if(window.innerWidth<651){
                         content[index].style.display = "block"
+                        content[index].classList.add("visible")
                     }
                 }, 500);
 

@@ -86,6 +86,20 @@
     color: black;
     padding: 15px;
     display: none;
+    opacity: 0;
+}
+.visible{
+    animation: fadeIn 0.8s ease forwards;
+}
+@keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
 .Thing-content__container{
     height: 100%;
