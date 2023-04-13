@@ -1,11 +1,6 @@
-.process{
-    margin-bottom: 100px;
-    background-color: #ffba00;
+.carousel__title{
+    margin-bottom: 30px;
 }
-.process h3{
-    padding-top: 50px;
-}
-
 .viewbox {
     margin: 0 auto;
     overflow-x: hidden;
@@ -124,8 +119,10 @@
     right: -20px;
 }
 @media only screen and (max-width: 960px) {
+
     .step{
         flex-direction: column;
+        padding: 0;
     }
     .arrow-icon img{
         width: 25px;
@@ -135,5 +132,19 @@
     }
     .arrow-icon-right{
         right: -10px;
+    }
+}
+@media only screen and (max-width: 570px) {
+
+    .step-item a{
+        display: none;
+    }
+    .step-nav{
+        width: 50%;
+    }
+    .step-nav .step-item{
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
     }
 }

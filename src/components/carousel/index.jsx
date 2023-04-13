@@ -97,7 +97,7 @@ function Carousel() {
 
     return (
         <div>
-            <h3>Обучение для получение работы</h3>
+            <h3 className="carousel__title">Обучение для получение работы</h3>
             <div className="wrap">
                 <div className="viewbox">
                     <div className="steps" style={{ left: -activeStep * 100 + '%' }}>
@@ -161,11 +161,12 @@ function Carousel() {
                     </div>
                     <ul className="step-nav">
                         {steps.map((step, index) => (
-                            <li key={index}>
+                            <li key={index}
+                                className={`step-item ${activeStep === index ? 'active' : ''}`}
+                                onClick={() => handleStepClick(index)}
+                            >
                                 <a
-                                    className={`step-item ${activeStep === index ? 'active' : ''}`}
                                     data-step={index}
-                                    onClick={() => handleStepClick(index)}
                                 >
                                     {step.lesson.name}
                                 </a>

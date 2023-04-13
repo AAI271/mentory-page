@@ -26,8 +26,8 @@ function StepProcess() {
                     contn.style.display="none"
                     pointer[ind].style.opacity="0"
                 })
+                pointer[index].style.opacity="1"
                 const timer = setTimeout(() => {
-                    pointer[index].style.opacity="1"
                     if(index!==0) {
                         content[index].style.display = "block"
                     }
@@ -74,8 +74,11 @@ function StepProcess() {
                         </div>
                         <img className="Thing-pointer" width="20" src={TopIcon} alt=""/>
                         <div className="Thing-content">
-                            <h3>Midterm exam №1</h3>
-                            <p>Доработка функции мобильного приложения </p>
+                            <div className="Thing-content__container">
+                                <h3>Midterm exam №1</h3>
+                                <p>Доработка функции мобильного приложения </p>
+                                <h2>50$</h2>
+                            </div>
                         </div>
                     </div>
                     <div className="Thing">
@@ -91,8 +94,11 @@ function StepProcess() {
                         </div>
                         <img className="Thing-pointer" width="20" src={TopIcon} alt=""/>
                         <div className="Thing-content">
-                            <h3>Midterm exam №2</h3>
-                            <p>Разработка модуля приложения - торговой системы </p>
+                            <div className="Thing-content__container">
+                                <h3>Midterm exam №2</h3>
+                                <p>Разработка модуля приложения - торговой системы </p>
+                                <h2>150$</h2>
+                            </div>
                         </div>
                     </div>
                     <div className="Thing">
@@ -105,8 +111,11 @@ function StepProcess() {
                         </div>
                         <img className="Thing-pointer" width="20" src={TopIcon} alt=""/>
                         <div className="Thing-content">
-                            <h3>Final exam</h3>
-                            <p>Разработка модуля приложения - торговой системы </p>
+                            <div className="Thing-content__container final">
+                                <h3>Final exam</h3>
+                                <p>Разработка модуля приложения - торговой системы </p>
+                                <h2>400$</h2>
+                            </div>
                         </div>
                     </div>
                 </div>

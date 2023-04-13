@@ -8,22 +8,24 @@ import Telegram3 from "../../assets/Vector (3).svg"
 
 const Footer = () => {
     return (
-        <footer className="marginX">
-            <div className="footer__links">
-                <img width="160" src={Logo} alt="logo"/>
-                <div className="footer__contacts">
-                    <img src={Telegram} alt=""/>
-                    <img src={Telegram1} alt=""/>
-                    <img src={Telegram2} alt=""/>
-                    <img src={Telegram3} alt=""/>
+        <footer>
+            <div className="footer__container marginX">
+                <div className="footer__links">
+                    <img width="160" src={Logo} alt="logo"/>
+                    <div className="footer__contacts">
+                        <img src={Telegram} alt=""/>
+                        <img src={Telegram1} alt=""/>
+                        <img src={Telegram2} alt=""/>
+                        <img src={Telegram3} alt=""/>
+                    </div>
                 </div>
-            </div>
-            <hr/>
-            <div className="footer__info">
-                <p>Connect</p>
-                <p>123-456-7890</p>
-                <p>123 Anywhere St., Any City, ST 12345 </p>
-                <p>hello@reallygreatsite.com</p>
+                <hr/>
+                <div className="footer__info">
+                    <p>Connect</p>
+                    <p>123-456-7890</p>
+                    <p>123 Anywhere St., Any City, ST 12345 </p>
+                    <p>hello@reallygreatsite.com</p>
+                </div>
             </div>
         </footer>
     );

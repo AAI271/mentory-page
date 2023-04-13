@@ -4,6 +4,9 @@ header {
     align-items: center;
     padding: 15px 0;
 }
+header.marginX{
+    margin: 0 auto;
+}
 header nav ul {
     list-style: none;
     padding: 0;
@@ -62,7 +65,7 @@ header nav ul {
         transition: 0.8s all ease;
         flex-direction: column;
         background: #ffe9e9;
-        position: fixed;
+        position: absolute;
         border-radius: 10px;
         width: 95vw;
         left: 0;

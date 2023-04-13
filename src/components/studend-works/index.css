@@ -1,3 +1,6 @@
+.student-works h3{
+    margin: 30px 0;
+}
 .student-works__item{
     height: 200px;
     max-width: 400px;
