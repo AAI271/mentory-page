@@ -16,22 +16,22 @@ const Header = () => {
             <nav className="nav">
                 <ul id="navbar">
                     <li className="nav-link">
-                        <a href="/mentory-page#about">
+                        <a href="#about">
                             О нас
                         </a>
                     </li>
                     <li className="nav-link">
-                        <a href="/mentory-page#roadmap">
+                        <a href="#roadmap">
                             Обучение
                         </a>
                     </li>
                     <li className="nav-link">
-                        <a href="/mentory-page#vacancy">
+                        <a href="#vacancy">
                             Вакансии
                         </a>
                     </li>
                     <li className="nav-link last">
-                        <a href="/mentory-page#order">
+                        <a href="#order">
                             Записаться
                         </a>
                     </li>
