@@ -7,7 +7,8 @@
     padding: 30px;
 }
 .order__text{
-    width: 45%;
+    font-size: 36px;
+    width: 50%;
     min-width: 370px;
 }
 .order__form{

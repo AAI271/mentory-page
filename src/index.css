@@ -29,11 +29,11 @@ h3{
 }
 .my-input{
     background: transparent;
-    padding: 17px;
-    border-color: white;
+    padding: 20px;
+    border: 2px solid white;
     border-radius: 11px;
     color: white;
-    width: calc(100% - 34px);
+    width: calc(100% - 43px);
 }
 .my-input:focus{
     outline: none;
@@ -46,13 +46,12 @@ h3{
     background: white;
     border-radius: 11px;
     color: #3E63E7;
-    padding: 17px;
+    padding: 20px;
     border: none;
     cursor: pointer;
 }
 
 @media only screen and (max-width: 960px) {
-
     h2{
         font-size: 30px;
         font-weight: 450;

@@ -150,7 +150,7 @@ function Carousel() {
                                             ))}
                                         </div>
                                         <div className="box__btn">
-                                            <Link to={`/${step.lesson.name}`}>
+                                            <Link to={`${step.lesson.name}`}>
                                                 <button className="my-btn" type="submit">Подробнее</button>
                                             </Link>
                                         </div>

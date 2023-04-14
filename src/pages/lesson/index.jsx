@@ -233,7 +233,7 @@ const Lesson = () => {
         },
     ];
     const list = ["#/Flutter","#/PHP","#/Java","#/Frontend_Dev","#/Golang"]
-    const lessonInfo = backInfo[list.indexOf(window.location.hash)]
+    const lessonInfo = backInfo[0]
     return (
         <main className="marginX">
             <section>

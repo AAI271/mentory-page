@@ -9,19 +9,19 @@ import StudentWorks from "../../components/studend-works";
 const Home = () => {
     return (
         <main>
-            <section className="marginX">
+            <section id="about" className="marginX">
                 <About/>
             </section>
-            <section className="marginX">
+            <section id="vacancy" className="marginX">
                 <Carousel/>
             </section>
-            <section>
+            <section id="roadmap">
                 <StepProcess/>
             </section>
-            <section className="marginX">
+            <section id="order" className="marginX">
                 <Order/>
             </section>
-            <section className="marginX">
+            <section id="student-works" className="marginX">
                 <StudentWorks/>
             </section>
         </main>

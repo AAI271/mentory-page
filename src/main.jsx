@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import {
+    createBrowserRouter,
     createHashRouter, Link,
     RouterProvider,
 } from "react-router-dom";
@@ -12,13 +13,13 @@ import Footer from "./components/footer";
 import Lesson from "./pages/lesson";
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/mentory-page",
         element: <Home/>,
     },
     {
-        path: "/:about",
+        path: "/mentory-page/:lesson" ,
         element: <Lesson/>,
     },
 ]);
