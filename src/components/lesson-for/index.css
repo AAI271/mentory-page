@@ -11,6 +11,7 @@
 .lesson-for__content{
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
 }
 .lesson-for__box{
     color: black;
@@ -23,7 +24,7 @@
 .lesson-for__box-title{
     height: 45%;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1040px) {
     .lesson-for{
         text-align: center;
     }
@@ -33,6 +34,7 @@
     .lesson-for__content{
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
     .lesson-for__box{
         text-align: left;

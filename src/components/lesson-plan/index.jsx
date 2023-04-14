@@ -8,7 +8,7 @@ const LessonPlan = ({lessonPlan}) => {
                 <div key={`lesson-plan-${index}`} className="lesson-plan__item">
                     <div className="lesson-plan__item-container">
                         <div className="lesson-plan__item-week">
-                            <h2>{index}</h2>
+                            <h2>{index+1}</h2>
                             <h3>Неделя</h3>
                         </div>
                         <div className="lesson-plan__item-text">

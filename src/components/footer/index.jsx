@@ -1,6 +1,6 @@
 import React from 'react';
 import "./index.css"
-import Logo from "../../assets/Logo.svg"
+import Logo from "../../assets/footer-logo.png"
 import Telegram from "../../assets/Vector.svg"
 import Telegram1 from "../../assets/Vector (1).svg"
 import Telegram2 from "../../assets/Vector (2).svg"

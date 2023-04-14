@@ -16,7 +16,7 @@ const Order = () => {
                     <input className="my-input" type="tel" placeholder="Номер телефона"/>
                 </div>
                 <input className="my-input" type="email" placeholder="Email"/>
-                <button className="my-btn" type="submit">Записаться на курс</button>
+                <button className="my-btn" type="submit">Отправить</button>
             </form>
         </div>
     );

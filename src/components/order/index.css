@@ -25,7 +25,7 @@
     justify-content: space-between;
 }
 .order__form div input{
-    width: 40%;
+    width: 39%;
 }
 @media only screen and (max-width: 960px) {
     .order{
@@ -35,7 +35,18 @@
         width: 100%;
         min-width: 0;
     }
+    .order__form{
+        height: 245px !important;
+    }
+    .order__form div{
+        width: 100%;
+        flex-direction: column;
+    }
     .order__form div input{
-        width: 43%;
+        margin-bottom: 5px;
+        width: calc(100% - 43px)
+    }
+    .order__form .my-btn{
+        margin-top: 15px;
     }
 }

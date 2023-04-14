@@ -1,5 +1,7 @@
 .carousel__title{
     margin-bottom: 30px;
+    max-width: 300px;
+    width: 100%;
 }
 .viewbox {
     margin: 0 auto;
@@ -49,6 +51,7 @@
     text-align: center;
     color: black;
     margin-right: 1rem;
+    padding: 0 5px;
     transition: background-color 0.5s;
 }
 .step-item.active {
@@ -146,5 +149,6 @@
         border-radius: 50%;
         width: 10px;
         height: 10px;
+        padding: 0;
     }
 }

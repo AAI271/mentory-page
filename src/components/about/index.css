@@ -28,4 +28,7 @@
     .about{
         padding: 20px;
     }
+    .about.main-box form{
+        height: 190px;
+    }
 }
