@@ -31,10 +31,28 @@ function Carousel() {
                 stackList:['Swift','ООП','Objective-C','MVC','MVC']
             },
             lesson:{
-                name:"PHP",
-                title: 'Курс по разработке IOS-приложений',
-                description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
-                stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
+                name:'Data_Analysis',
+                title: 'Data Analysis (Excel, Power BI, SQL Basics)',
+                duration_time:'2 месяца',
+                subtitle:'KazApple Ltd. ',
+                description: 'По окончании курса участники будут готовы к созданию отчетов и анализу данных в Excel и Power BI, а также к работе с базами данных, используя SQL. Курс подходит для всех, кто хочет начать свою карьеру в сфере анализа данных.',
+                stackList:['Excel','Power BI','SQL Basics'],
+            }
+        },
+        {
+            vacancy:{
+                title: 'IOS разработчик (middle)',
+                subtitle:'KazApple Ltd. ',
+                description: 'Ищем разработчика для создания и публикации IOS приложений, таких как Browser, Messenger, Cleaner, VPN, AdBlock.',
+                info:['Свободный график','800000 - 1100000 тг. в месяц'],
+                stackList:['Swift','ООП','Objective-C','MVC','MVC']
+            },
+            lesson:{
+                name:"C#",
+                title: 'C# - Интенсивный курс для начинающих, с использованием .NET',
+                duration_time:'2 месяца',
+                description: 'C# разработчик. Интенсивный курс для начинающих, с использованием .NET" - это 8-недельный онлайн курс, который поможет участникам освоить основы программирования на языке C# и популярных технологий .NET. ',
+                stackList:['C#','.NET','OOP'],
             }
 
         },
@@ -47,10 +65,10 @@ function Carousel() {
                 stackList:['Swift','ООП','Objective-C','MVC','MVC']
             },
             lesson:{
-                name:"Java",
-                title: 'Курс по разработке IOS-приложений',
-                description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
-                stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
+                name:"Frontend",
+                title: 'Frontend разработка на JavaScript - Базовый курс для новичков',
+                description: 'Базовый курс для новичков" - 8-недельный онлайн курс, который поможет участникам изучить основы веб-разработки, включая HTML, CSS и JavaScript, а также продвинутые технологии, такие как Flexbox, Grid, React и Redux.',
+                stackList:['HTML','CSS','Javascript','React','Redux'],
             }
 
         },
@@ -63,30 +81,13 @@ function Carousel() {
                 stackList:['Swift','ООП','Objective-C','MVC','MVC']
             },
             lesson:{
-                name:"Frontend_Dev",
-                title: 'Курс по разработке IOS-приложений',
-                description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
-                stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
+                name:"QA_Engineering",
+                title: 'QA Engineering-Базовый курс для новичков',
+                duration_time:'2 месяца',
+                description: 'QA tester. Интенсивный курс для начинающих, с использованием QA Engineering" - это 8-недельный онлайн курс, который поможет участникам освоить основы тестирования приложений и других платформ.',
+                stackList:[],
             }
-
-        },
-        {
-            vacancy:{
-                title: 'IOS разработчик (middle)',
-                subtitle:'KazApple Ltd. ',
-                description: 'Ищем разработчика для создания и публикации IOS приложений, таких как Browser, Messenger, Cleaner, VPN, AdBlock.',
-                info:['Свободный график','800000 - 1100000 тг. в месяц'],
-                stackList:['Swift','ООП','Objective-C','MVC','MVC']
-            },
-            lesson:{
-                name:"Golang",
-                title: 'Курс по разработке IOS-приложений',
-                description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
-                stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
-            }
-
-        },
-
+        }
     ];
 
     const [activeStep, setActiveStep] = useState(0);
@@ -140,7 +141,7 @@ function Carousel() {
                                             <h3>{step.lesson.title}</h3>
                                         </div>
                                         <div className="box_description">
-                                            <p>{step.vacancy.description}</p>
+                                            <p>{step.lesson.description}</p>
                                         </div>
                                         <div className="box__stack-list">
                                             {step.lesson.stackList.map((stack,index)=>(
@@ -150,7 +151,7 @@ function Carousel() {
                                             ))}
                                         </div>
                                         <div className="box__btn">
-                                            <Link to={`${step.lesson.name}`}>
+                                            <Link to={`${step.lesson.name==="C#"?"C_Sharp":step.lesson.name}`}>
                                                 <button className="my-btn" type="submit">Подробнее</button>
                                             </Link>
                                         </div>

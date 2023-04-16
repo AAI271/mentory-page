@@ -7,45 +7,62 @@ function StepProcess() {
         const steps = document.querySelectorAll(".Thing-step");
         const line = document.querySelector(".Thing-dash");
         const lineDefault = document.querySelector(".Thing-dash-default");
-        const content = document.querySelectorAll(".Thing-content")
-        const pointer = document.querySelectorAll(".Thing-pointer")
-        if(window.innerWidth<651){
-            content[0].style.display="block"
-            content[0].classList.add("visible")
-        }
-        pointer[0].style.opacity="1"
+        const content = document.querySelectorAll(".Thing-content");
+        const pointer = document.querySelectorAll(".Thing-pointer");
 
-        lineDefault.style.width=`${steps[3].parentNode.offsetLeft + steps[3].offsetWidth / 2}px`
-        steps.forEach((step, index) => {
-            step.addEventListener("click", () => {
-                line.style.transition = "width 0.5s ease-in-out";
-                line.style.width = `${
-                    step.parentNode.offsetLeft + step.offsetWidth / 2
-                }px`;
-                line.style.backgroundColor = "red";
-                content.forEach((contn,ind)=>{
-                    contn.style.display="none"
-                    contn.classList.remove("visible")
-                    pointer[ind].style.opacity="0"
-                })
-                pointer[index].style.opacity="1"
-                const timer = setTimeout(() => {
-                    if(index!==0) {
-                        content[index].style.display = "block"
-                        content[index].classList.add("visible")
-                    }
-                    else if(window.innerWidth<651){
-                        content[index].style.display = "block"
-                        content[index].classList.add("visible")
-                    }
-                }, 500);
+        function handleResize() {
+            if (window.innerWidth < 651) {
+                content[0].style.display = "block";
+                content[0].classList.add("visible");
+            }
+            pointer[0].style.opacity = "1";
 
-                return () => {
-                    clearTimeout(timer);
-                }
+            lineDefault.style.width = `${
+                steps[3].parentNode.offsetLeft + steps[3].offsetWidth / 2
+            }px`;
+
+            steps.forEach((step, index) => {
+                step.addEventListener("click", () => {
+                    line.style.transition = "width 0.5s ease-in-out";
+                    line.style.width = `${
+                        step.parentNode.offsetLeft + step.offsetWidth / 2
+                    }px`;
+                    line.style.backgroundColor = "red";
+                    content.forEach((contn, ind) => {
+                        contn.style.display = "none";
+                        contn.classList.remove("visible");
+                        pointer[ind].style.opacity = "0";
+                    });
+                    pointer[index].style.opacity = "1";
+                    const timer = setTimeout(() => {
+                        if (index !== 0) {
+                            content[index].style.display = "block";
+                            content[index].classList.add("visible");
+                        } else if (window.innerWidth < 651) {
+                            content[index].style.display = "block";
+                            content[index].classList.add("visible");
+                        }
+                    }, 500);
+
+                    return () => {
+                        clearTimeout(timer);
+                    };
+                });
             });
-        });
+        }
+
+        // Call handleResize on mount
+        handleResize();
+
+        // Add event listener
+        window.addEventListener("resize", handleResize);
+
+        // Remove event listener before component unmounts
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
+
 
     return (
         <div className="step-process">
