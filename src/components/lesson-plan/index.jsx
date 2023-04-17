@@ -13,7 +13,11 @@ const LessonPlan = ({lessonPlan}) => {
                         </div>
                         <div className="lesson-plan__item-text">
                             <p><strong>{item.title}</strong></p>
-                            <p>{item.text}</p>
+                            <ul>
+                            {item.text.map((text,index)=>(
+                                <li key={`lesson-plan-list${index}`}>{text}</li>
+                            ))}
+                            </ul>
                         </div>
                     </div>
                     {index!==lessonPlan.plan_list.length-1&&(

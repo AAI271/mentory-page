@@ -9,26 +9,11 @@ function Carousel() {
     const steps = [
         {
             vacancy:{
-                title: 'IOS разработчик (middle)',
-                subtitle:'KazApple Ltd. ',
-                description: 'Ищем разработчика для создания и публикации IOS приложений, таких как Browser, Messenger, Cleaner, VPN, AdBlock.',
-                info:['Свободный график','800000 - 1100000 тг. в месяц'],
-                stackList:['Swift','ООП','Objective-C','MVC','MVC']
-            },
-            lesson: {
-                name:"Flutter",
-                title: 'Курс по разработке IOS-приложений',
-                description: 'Cоздайте свою собственную уникальную мобильную программу, которая удивит и порадует пользователей iPhone и iPad!',
-                stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
-            }
-        },
-        {
-            vacancy:{
-                title: 'IOS разработчик (middle)',
-                subtitle:'KazApple Ltd. ',
-                description: 'Ищем разработчика для создания и публикации IOS приложений, таких как Browser, Messenger, Cleaner, VPN, AdBlock.',
-                info:['Свободный график','800000 - 1100000 тг. в месяц'],
-                stackList:['Swift','ООП','Objective-C','MVC','MVC']
+                title: 'Data analyst',
+                subtitle:'Aventus Group',
+                description: 'Сейчас мы в поиске Data analyst. Присоединяйтесь к Aventus Group и становитесь важной частью большого объединения профессионалов, создающих Fintech историю по всему миру!',
+                info:['Полная занятость, полный день','от 400 000 до 650 000 KZT на руки'],
+                stackList:['Power BI','SQL']
             },
             lesson:{
                 name:'Data_Analysis',
@@ -41,11 +26,11 @@ function Carousel() {
         },
         {
             vacancy:{
-                title: 'IOS разработчик (middle)',
-                subtitle:'KazApple Ltd. ',
-                description: 'Ищем разработчика для создания и публикации IOS приложений, таких как Browser, Messenger, Cleaner, VPN, AdBlock.',
-                info:['Свободный график','800000 - 1100000 тг. в месяц'],
-                stackList:['Swift','ООП','Objective-C','MVC','MVC']
+                title: 'Web developer',
+                subtitle:'Aspose',
+                description: 'We\'re hiring a web developer for imaging applications.',
+                info:['Полная занятость, удаленная работа','от 2 500 USD до вычета налогов'],
+                stackList:['C#','Angular','JavaScript','HTML5','CSS3','OOP','English','ASP.NET','Core','SEO']
             },
             lesson:{
                 name:"C#",
@@ -58,11 +43,11 @@ function Carousel() {
         },
         {
             vacancy:{
-                title: 'IOS разработчик (middle)',
-                subtitle:'KazApple Ltd. ',
-                description: 'Ищем разработчика для создания и публикации IOS приложений, таких как Browser, Messenger, Cleaner, VPN, AdBlock.',
-                info:['Свободный график','800000 - 1100000 тг. в месяц'],
-                stackList:['Swift','ООП','Objective-C','MVC','MVC']
+                title: 'Веб-разработчик',
+                subtitle:'ТОО ОТИС',
+                description: 'Ищем разработчика, который будет отвечать за создание и оптимизацию функционала на Laravel (версия 6 и выше), Vue.js (версия 2 и выше) ',
+                info:['Полная занятость, полный день','от 300 000 до 400 000 KZT до вычета налогов'],
+                stackList:['Laravel','Vue.js','Bootsrtap','MySQL','PostgreSQL','MS SQL']
             },
             lesson:{
                 name:"Frontend",
@@ -74,11 +59,11 @@ function Carousel() {
         },
         {
             vacancy:{
-                title: 'IOS разработчик (middle)',
-                subtitle:'KazApple Ltd. ',
-                description: 'Ищем разработчика для создания и публикации IOS приложений, таких как Browser, Messenger, Cleaner, VPN, AdBlock.',
-                info:['Свободный график','800000 - 1100000 тг. в месяц'],
-                stackList:['Swift','ООП','Objective-C','MVC','MVC']
+                title: 'QA Engineer (middle)',
+                subtitle:'ТОО BirdsBuild (БёрдсБилд)',
+                description: 'Мы приглашаем в команду Middle Q/A Engineer для работы в международной компании BirdsBuild.',
+                info:['Полная занятость, гибкий график','от 500 000 KZT до вычета налогов'],
+                stackList:['Postman','Charles','Altair','Jira + confluence','Swager','Git']
             },
             lesson:{
                 name:"QA_Engineering",
@@ -186,7 +171,7 @@ function Carousel() {
                         )
                     }
                     {
-                        activeStep<4&&(
+                        activeStep<3&&(
                             <img
                                 onClick={() => {activeStep<4&&setActiveStep(activeStep+1)}}
                                 className="arrow-icon-right"

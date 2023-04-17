@@ -7,51 +7,6 @@ import LessonPlan from "../../components/lesson-plan";
 const Lesson = () => {
     const backInfo = [
         {
-            lesson_about:{
-                text:"Изучение Flutter для начинающих",
-                stackList:['Swift','SwiftUI','Objective-C','MVC','6 месяцев','Для продвинутых'],
-            },
-            lesson_info:{
-                text:'Представляем вам видео курс по изучению движка Unity и работы с ним. За курс мы с нуля разберем базовый интерфейс Unity, научимся работать с основными функциями Unity и в конце курса создадим небольшую 3D игру на Unity 5. Курс рассчитан для начинающих в сфере создания игр. Unity – это игровой движок, на котором строится большая часть современных игр на разных платформах. Посредством движка реально создавать игры, ориентированные на запуск на компьютерах (Windows, Linux, MacOS), мобильных телефонах, планшетных компьютерах (Android, iOS, Windows Phone) и даже игровых приставках PlayStation, Xbox, Nintendo.'
-            },
-            lesson_for:{
-                list_info:[
-                    {
-                        title:'Вы чувствуете перспективность IT-сферы, но не знаете, счего начать?',
-                        text:'Проведем вас за руку с наставниками через всю профессию до трудоустройства'
-                    },
-                    {
-                        title:'Вы работаете в смежной области и хотите сменить профессию?',
-                        text:'Обучим всему необходимому и поможем грамотно использовать ваш прошлый опыт'
-                    },
-                    {
-                        title:'У вас техническое образование и есть небольшой опыт программирования',
-                        text:'Соберём портфолио, которое покажет работодателям ваши комплексные знания и поможет успешно пройти собеседования'
-                    },
-                ]
-            },
-            lesson_plan:{
-                plan_list:[
-                    {
-                        title:'Урок #1  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
-                    },
-                    {
-                        title:'Урок #2  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
-                    },
-                    {
-                        title:'Урок #3  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
-                    },
-                    {
-                        title:'Урок #4  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
-                    },
-                ]
-            },
-        },
-        {
             lesson_about: {
                 text: "Data Analysis (Excel, Power BI, SQL Basics)",
                 stackList: ["Excel", "Power BI", "SQL"]
@@ -82,20 +37,106 @@ const Lesson = () => {
             lesson_plan:{
                 plan_list:[
                     {
-                        title:'Урок #1  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Продвинутый Excel',
+                        text:[
+                            'Lookup/Reference функции',
+                            'Статистические функции',
+                            'Фориматтинг на основе формул',
+                            'Функции дат и времени'
+                        ]
                     },
                     {
-                        title:'Урок #2  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Продвинутый Excel',
+                        text:[
+                            'Логические операторы',
+                            'Формулы динамических массивов',
+                            'Текстовые функции',
+                            'Веб-скрапинг с WEBSERVICE & FILTERXML'
+                        ]
                     },
                     {
-                        title:'Урок #3  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Power BI: Подключение и преобразовывание сырых данных',
+                        text:[
+                            'Введение в редактор запросов Power BI',
+                            'Типы соединителей данных Power BI',
+                            'Основные преобразования таблиц',
+                            'Инструменты для работы с текстом, числами и датами',
+                            'Индексные и условные столбцы',
+                            'Группировка и агрегирование данных',
+                            'Пивоты',
+                            'Изменение, объединение и добавление запросов',
+                            'Подключение к папкам',
+                            'Определение иерархий и категорий',
+                        ]
                     },
                     {
-                        title:'Урок #4  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Power BI:  Создание реляционных моделей данных',
+                        text:[
+                            'Введение в нормализацию базы данных',
+                            'Создание связей между таблицами Power BI',
+                            'Схемы «Stra» и «Snowflake»',
+                            'Активные и неактивные связи',
+                            'Фильтрация и перекрестная фильтрация',
+                            'Скрытие полей в представлении отчета Power BI',
+                            'Рекомендации по моделированию данных и Power BI'
+                        ]
+                    },
+                    {
+                        title:'Power BI: DAX',
+                        text:[
+                            'Введение в выражения анализа данных (DAX)',
+                            'Вычисляемые столбцы и меры',
+                            'Синтаксис и операторы DAX',
+                            'Общие функции Power BI',
+                            'Основные формулы даты и времени',
+                            'Логические и условные операторы',
+                            'Текстовые, математические и статистические функции',
+                            'Объединение данных с RELATED',
+                            'Функции CALCULATE, ALL & FILTER',
+                            'Итераторы DAX (SUMX, AVERAGEX)',
+                        ]
+                    },
+                    {
+                        title:'Power BI: Разработка интерактивных отчетов Power BI',
+                        text:[
+                            'Введение в представление отчетов Power BI',
+                            'Добавление базовых диаграмм в отчеты Power BI',
+                            'Параметры форматирования и фильтрации',
+                            'Матрицы',
+                            'Слайсеры и таймлайны',
+                            'Карточки и KPI',
+                            'Добавление фильтров Drillthrough',
+                            'Использование закладок',
+                            'Публикация в облако Power BI'
+                        ]
+                    },
+                    {
+                        title:'SQL Basics',
+                        text:[
+                            'Установка pgAdmin и PostgreSQL',
+                            'Создание таблицы',
+                            'Добавиление данных в таблицу',
+                            'Операторы Select PostgreSQL',
+                            'Оператор «Where» в PostgreSQL',
+                            'Wildcards PostgreSQL',
+                            'PostgreSQL AND, OR, NOT',
+                            'PostgreSQL ORDER BY',
+                            'PostgreSQL INSERT INTO',
+                        ]
+                    },
+                    {
+                        title:'SQL Basics',
+                        text:[
+                            'PostgreSQL Update',
+                            'PostgreSQL Delete',
+                            'PostgreSQL Limit',
+                            'PostgreSQL Foreign Keys',
+                            'PostgreSQL Inner Join',
+                            'PostgreSQL Join Where',
+                            'PostgreSQL Delete Table',
+                            'PostgreSQL Import and Export Tables',
+                            'PostgreSQL Backup and Restore Database'
+                        ]
                     },
                 ]
             },
@@ -131,20 +172,58 @@ const Lesson = () => {
             lesson_plan:{
                 plan_list:[
                     {
-                        title:'Урок #1  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Введение в HTML и CSS',
+                        text:[
+                            'Введение в веб-разработку и фронтенд',
+                            'Основы HTML: теги, атрибуты и структура документа',
+                            'Основы CSS: селекторы, свойства и стилизация элементов',
+                            'Создание простой веб-страницы с использованием HTML и CSS'
+                        ]
                     },
                     {
-                        title:'Урок #2  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Продвинутые возможности CSS',
+                        text:[
+                            'Работа с позиционированием элементов',
+                            'Использование flexbox и grid для создания адаптивных макетов',
+                            'Работа с анимациями и переходами',
+                            'Создание респонсивных веб-страниц с использованием медиа-запросов'
+                        ]
                     },
                     {
-                        title:'Урок #3  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'JavaScript: Основы',
+                        text:[
+                            'Введение в язык программирования JavaScript',
+                            'Синтаксис и типы данных',
+                            'Переменные, условные операторы, циклы',
+                            'Функции и объекты'
+                        ]
                     },
                     {
-                        title:'Урок #4  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Продвинутые возможности JavaScript',
+                        text:[
+                            'Работа с событиями и обработчиками событий',
+                            'Работа с DOM и изменение элементов на странице',
+                            'Работа с AJAX и получение данных с сервера',
+                            'Работа с библиотеками и фреймворками JavaScript, такими как jQuery'
+                        ]
+                    },
+                    {
+                        title:'React: Основы (По возможности)',
+                        text:[
+                            'Введение в React и его философию',
+                            'Создание компонентов и их использование',
+                            'Использование JSX и работа с props',
+                            'Работа со стейтом и обработка событий'
+                        ]
+                    },
+                    {
+                        title:'Продвинутые возможности React',
+                        text:[
+                            'Работа с жизненным циклом компонентов',
+                            'Работа с формами и валидация ввода',
+                            'Работа с роутингом и создание SPA',
+                            'Использование Redux и управление состоянием приложения'
+                        ]
                     },
                 ]
             },
@@ -180,20 +259,47 @@ const Lesson = () => {
             lesson_plan:{
                 plan_list:[
                     {
-                        title:'Урок #1  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Introduction to Programming Concepts and UML',
+                        text:[
+                            'Introduction to programming and its applications',
+                            'Overview of programming languages',
+                            'Basic programming concepts: data types, variables, operators, and expressions',
+                            'Basic control structures: if-else, loops, and functions',
+                            'Introduction to UML (Unified Modeling Language)',
+                            'UML diagrams: use case, class, sequence, and activity diagrams',
+                            'Creating block schemes'
+                        ]
                     },
                     {
-                        title:'Урок #2  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Object-Oriented Programming with C#',
+                        text:[
+                            'Introduction to object-oriented programming (OOP)',
+                            'Data types, Enums',
+                            'Classes, objects, and methods in C#',
+                            'Inheritance, encapsulation and polymorphism in C#',
+                            'Exception handling in C#',
+                            'Basic data structures: arrays and lists in C#'
+                        ]
                     },
                     {
-                        title:'Урок #3  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Console Application Development with C# and .NET',
+                        text:[
+                            'Introduction to console application development with C# and .NET',
+                            'Command line arguments',
+                            'File input and output',
+                            'Working with strings and text files',
+                            'Basic debugging techniques'
+                        ]
                     },
                     {
-                        title:'Урок #4  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Desktop Application Development with C# and .NET',
+                        text:[
+                            'Introduction to desktop application development with C# and .NET',
+                            'Windows Forms basics',
+                            'Event-driven programming',
+                            'Creating user interfaces and controls in a console app',
+                            'Basic debugging techniques'
+                        ]
                     },
                 ]
             },
@@ -229,26 +335,82 @@ const Lesson = () => {
             lesson_plan:{
                 plan_list:[
                     {
-                        title:'Урок #1  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Introduction to Quality Assurance',
+                        text:[
+                            'What is QA and its importance in software development?',
+                            'The role of QA in the software development lifecycle',
+                            'Overview of testing types (unit, integration, system, acceptance)'
+                        ]
                     },
                     {
-                        title:'Урок #2  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Software Testing Fundamentals',
+                        text:[
+                            'Principles of software testing',
+                            'Black box testing and white box testing',
+                            'Functional and non-functional testing'
+                        ]
                     },
                     {
-                        title:'Урок #3  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Test Planning and Test Case Design',
+                        text:[
+                            'Developing test plans and strategies',
+                            'Test case design techniques',
+                            'Creating effective test cases'
+                        ]
                     },
                     {
-                        title:'Урок #4  - Что такое Unity? Введение с нуля',
-                        text:'Что такое Unity? Введение с нуля'
+                        title:'Test Execution and Reporting',
+                        text:[
+                            'Test execution and defect reporting',
+                            'Defect management and tracking',
+                            'Test coverage and metrics'
+                        ]
                     },
+                    {
+                        title:'Automation Testing Fundamentals',
+                        text:[
+                            'Introduction to automation testing',
+                            'Automation testing frameworks',
+                            'Selecting and evaluating automation tools'
+                        ]
+                    },
+                    {
+                        title:'Test Automation with Selenium',
+                        text:[
+                            'Introduction to Selenium',
+                            'Setting up the Selenium environment',
+                            'Building and executing automated tests with Selenium WebDriver'
+                        ]
+                    },
+                    {
+                        title:'API Testing',
+                        text:[
+                            'Overview of API testing',
+                            'API testing tools',
+                            'Test automation with Postman'
+                        ]
+                    },
+                    {
+                        title:'Performance Testing',
+                        text:[
+                            'Introduction to performance testing',
+                            'Performance testing tools',
+                            'Load testing with JMeter'
+                        ]
+                    },
+                    {
+                        title:'Test Management and Quality Assurance',
+                        text:[
+                            'Test management and reporting tools',
+                            'Quality assurance and quality control',
+                            'Continuous integration and delivery in software testing'
+                        ]
+                    }
                 ]
-            },
+            }
         },
     ];
-    const list = ["Flutter","Data_Analysis","Frontend","C_Sharp","QA_Engineering"]
+    const list = ["Data_Analysis","Frontend","C_Sharp","QA_Engineering"]
     const path =window.location.pathname.split('/')
     const lessonIndex = list.indexOf(path[path.length-1])
     const lessonInfo = backInfo[lessonIndex]

@@ -26,6 +26,12 @@
     font-size: 20px;
     margin-left: 50px;
 }
+.lesson-plan__item-text li{
+    font-size: 15px;
+}
+.lesson-plan__item-text ul{
+    margin-left: 30px;
+}
 
 @media only screen and (max-width: 810px) {
     .lesson-plan{

@@ -2,6 +2,9 @@
     display: flex;
     margin: 0 50px;
 }
+.about-lesson__content{
+    width: 70%;
+}
 .about-lesson__form{
     width: 55%;
     display: flex;
@@ -16,8 +19,9 @@
     margin: 10px 0;
 }
 .about-lesson__stack{
-    background-color:#9E9E9E;
-    border-radius: 3px;
+    background-color:#e44853;
+    color: white;
+    border-radius: 10px;
     margin: 3px;
     padding: 5px;
     min-width: 100px;
