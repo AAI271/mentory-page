@@ -40,7 +40,16 @@
     .lesson-teacher__about{
         max-width: 500px;
         width: 100%;
-        padding: 20px 0;
+        padding: 30px 0;
     }
-
-}
+    .lesson-teacher__name{
+        font-size: 22px;
+    }
+    .lesson-teacher__content{
+        padding: 20px;
+    }
+    .lesson-teacher__linkedIn a {
+        bottom: 20px;
+        right: 20px;
+    }
+    }
