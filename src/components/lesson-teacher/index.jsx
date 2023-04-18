@@ -13,6 +13,7 @@ const LessonTeacher = ({lessonTeacher}) => {
                     <p className="lesson-teacher__name">
                         <strong>{lessonTeacher.name}</strong> - {lessonTeacher.description}
                     </p>
+
                     <p>
                         {lessonTeacher.experience}
                     </p>
