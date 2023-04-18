@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./index.css";
 import TopIcon from "../../assets/icontop-removebg-preview.png"
+import BgImage from "../../assets/bg.png"
 
 function StepProcess() {
     useEffect(() => {
@@ -65,7 +66,7 @@ function StepProcess() {
 
 
     return (
-        <div className="step-process">
+        <div className="step-process" style={{backgroundImage: `url(${BgImage})`}}>
             <div className="container">
                 <div className="Thing-container">
                     <div className="Thing-dash-default"/>

@@ -1,9 +1,10 @@
 import React from 'react';
 import "./index.css"
+import BgImage from "../../assets/bg.png";
 
 const About = () => {
     return (
-        <div className="about main-box">
+        <div className="about main-box" style={{backgroundImage: `url(${BgImage})`}}>
             <div className="about__text">
                 <h2>
                     Готовим специалистов

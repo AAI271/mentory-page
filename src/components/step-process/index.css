@@ -1,5 +1,6 @@
 .step-process{
-    background: #3E63E7 url("src/assets/bg.png") no-repeat;
+    background: #3E63E7 no-repeat;
+    background-size: contain;
     min-height: 300px;
     display: flex;
     align-items: center;
