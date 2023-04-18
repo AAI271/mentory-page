@@ -7,11 +7,14 @@ import Telegram2 from "../../assets/Vector (2).svg"
 import Telegram3 from "../../assets/Vector (3).svg"
 
 const Footer = () => {
+    const location = window.location.origin
     return (
         <footer>
             <div className="footer__container marginX">
                 <div className="footer__links">
-                    <img width="160" src={Logo} alt="logo"/>
+                    <a href={location}>
+                        <img width="160" src={Logo} alt="logo"/>
+                    </a>
                     <div className="footer__contacts">
                         <img src={Telegram} alt=""/>
                         <img src={Telegram1} alt=""/>

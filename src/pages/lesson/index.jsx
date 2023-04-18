@@ -3,8 +3,16 @@ import AboutLesson from "../../components/about-lesson";
 import LessonInfo from "../../components/lesson-info";
 import LessonFor from "../../components/lesson-for";
 import LessonPlan from "../../components/lesson-plan";
+import LessonTeacher from "../../components/lesson-teacher";
+import data_analysis from "../../assets/teachers/Elina.jpg"
+import javascript from "../../assets/teachers/Arman.jpg"
+import Csharp from "../../assets/teachers/Olzhas.jpg"
+import QA from "../../assets/teachers/Arystan.jpg"
 
 const Lesson = () => {
+
+    window.scrollTo({top:0})
+
     const backInfo = [
         {
             lesson_about: {
@@ -31,8 +39,12 @@ const Lesson = () => {
                 ],
             },
             lesson_teacher: {
+                image:data_analysis,
                 name: "Элина Амурлаева",
-                position: "RPA Developer в международной компании EY"
+                description:"Опытный аналитик данных с высоким уровнем знания Python, Power BI, VBA и Microsoft Power Automate.",
+                experience: "RPA Developer в международной компании EY",
+                graduated:"Astana IT University",
+                linkedIN:"https://www.linkedin.com/in/elina-amurlayeva-26726224b/"
             },
             lesson_plan:{
                 plan_list:[
@@ -166,8 +178,12 @@ const Lesson = () => {
                 ],
             },
             lesson_teacher: {
+                image:javascript,
                 name: "Арман Аскар",
-                position: "Frontend Teamlead в RBK Bank, более 5 лет опыта (One technologies, Forte Bank, Jysan invest JSC)"
+                description: "опытный Frontend разработчик с более чем 5 годами опыта работы в финансовом секторе.(One technologies, Forte Bank, Jysan invest JSC) ",
+                experience: "Frontend Teamlead в RBK Bank",
+                graduated:"",
+                linkedIN:"https://www.linkedin.com/in/askarjkee/"
             },
             lesson_plan:{
                 plan_list:[
@@ -253,8 +269,12 @@ const Lesson = () => {
                 ],
             },
             lesson_teacher: {
+                image:Csharp,
                 name: "Заит Олжас",
-                position: "Senior C# developer, 10 лет опыта, (Forte Bank, Sciencesoft, CRM Guru, Akvelon), участвовал в проекте компании Microsoft."
+                description: "Senior C# developer, 10 лет опыта, (Forte Bank, Sciencesoft, CRM Guru, Akvelon), участвовал в проекте компании Microsoft.",
+                experience: "Software developer в Akvelon, Inc.",
+                graduated:"",
+                linkedIN:"https://www.linkedin.com/in/zait-olzhas/"
             },
             lesson_plan:{
                 plan_list:[
@@ -329,8 +349,12 @@ const Lesson = () => {
                 ],
             },
             lesson_teacher: {
+                image:QA,
                 name: "Арыстан Сабир",
-                position: "QA Tester at Typi LLC, более 3 лет опыта (Yandex, Typi, Kodland)"
+                description: "мотивированный и опытный специалист с высокой степенью увлечения робототехникой, электротехникой и программированием.",
+                experience: "QA Tester at Typi LLC, более 3 лет опыта (Yandex, Typi, Kodland)",
+                graduated:"",
+                linkedIN:""
             },
             lesson_plan:{
                 plan_list:[
@@ -418,6 +442,9 @@ const Lesson = () => {
         <main className="marginX">
             <section>
                 <AboutLesson aboutLesson={lessonInfo.lesson_about}/>
+            </section>
+            <section>
+                <LessonTeacher lessonTeacher={lessonInfo.lesson_teacher}/>
             </section>
             <section>
                 <LessonInfo lessonInfo={lessonInfo.lesson_info}/>

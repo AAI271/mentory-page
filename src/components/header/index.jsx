@@ -8,10 +8,13 @@ const Header = () => {
         const navbar = document.getElementById("navbar")
         navbar.classList.toggle("show")
     }
+    const location = window.location.origin
     return (
         <header className="marginX">
             <div className="logo">
+                <a href={location}>
                 <img width="125" src={Logo} alt="logo"/>
+                </a>
             </div>
             <nav className="nav">
                 <ul id="navbar">

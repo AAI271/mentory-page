@@ -1,5 +1,6 @@
 .about{
-    background: #3E63E7;
+    background: #8D46F6 url("src/assets/bg.png") no-repeat;
+    background-size: contain;
     color: white;
     display: flex;
     align-items: center;
