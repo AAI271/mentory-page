@@ -27,7 +27,8 @@
 
 .step p{
     line-height: 20px;
-    width: 415px;
+    max-width: 415px;
+    width: 100%;
 }
 
 .step-nav {

@@ -134,7 +134,7 @@
 .Thing-content p{
     margin-top: 20px;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
     .step-process{
         min-height: 0;
         margin-bottom: 150px;
@@ -171,6 +171,7 @@
         0 0  0 2px rgb(255,255,255),
         0.3em 0.3em 1em rgba(0,0,0,0.3);
         background-color: white;
+        border-radius: 10px;
     }
     .Thing-content__container h2{
         border-radius: 5px;

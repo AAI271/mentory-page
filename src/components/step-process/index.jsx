@@ -42,7 +42,7 @@ function StepProcess() {
                             content[index].style.display = "block";
                             content[index].classList.add("visible");
                         }
-                    }, 500);
+                    }, 300);
 
                     return () => {
                         clearTimeout(timer);

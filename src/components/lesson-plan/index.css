@@ -7,6 +7,7 @@
 .lesson-plan h2{
     font-size: 70px;
     font-weight: 500;
+    padding: 10px 0;
 }
 .lesson-plan h3{
     font-size: 38px;
@@ -39,9 +40,10 @@
         margin: 0;
     }
     .lesson-plan h2{
-        width: 30px;
+        width: 80px;
         font-size: 40px;
         font-weight: 500;
+        padding: 0;
     }
     .lesson-plan h3{
         font-size: 28px;
