@@ -1,6 +1,6 @@
 import React from 'react';
 import "./index.css"
-import Logo from "../../assets/footer-logo.png"
+import Logo from "../../assets/Logo.svg"
 import Telegram from "../../assets/Vector.svg"
 import Telegram1 from "../../assets/Vector (1).svg"
 import Telegram2 from "../../assets/Vector (2).svg"
@@ -24,11 +24,30 @@ const Footer = () => {
                 </div>
                 <hr/>
                 <div className="footer__info">
-                    <p>Connect</p>
-                    <p>123-456-7890</p>
-                    <p>123 Anywhere St., Any City, ST 12345 </p>
-                    <p>hello@reallygreatsite.com</p>
+                    <p className="footer__info-title"><strong>Наши курсы</strong></p>
+                    <p><a href={`${location}/mentory-page/Data_Analysis`}>Data Analysis</a></p>
+                    <p><a href={`${location}/mentory-page/C_Sharp`}>C#</a></p>
+                    <p><a href={`${location}/mentory-page/Frontend`}>Frontend</a></p>
+                    <p><a href={`${location}/mentory-page/QA_Engineering`}>QA_Engineering</a></p>
                 </div>
+
+                <hr/>
+                <div className="footer__info">
+                    <p className="footer__info-title"><strong>Наши контакты</strong></p>
+                    <p><a href="tel:123-456-7890">123-456-7890</a></p>
+                    <p>123 Anywhere</p>
+                    <p><a href="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</a></p>
+                </div>
+
+                <hr/>
+                <div className="footer__info">
+                    <p className="footer__info-title"><strong>Mentory</strong></p>
+                    <p><a href="#about">О нас</a></p>
+                    <p><a href="#vacancy">Наши курсы</a></p>
+                    <p><a href="#roadmap">Учебный процесс</a></p>
+                    <p><a href="#order">Отправить заказ</a></p>
+                </div>
+
             </div>
         </footer>
     );

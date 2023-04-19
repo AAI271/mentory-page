@@ -7,9 +7,11 @@
     padding: 30px;
 }
 .order__text{
-    font-size: 36px;
     width: 50%;
     min-width: 370px;
+}
+.order__text h2{
+    font-size: 34px;
 }
 .order__form{
     width: 45%;

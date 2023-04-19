@@ -47,6 +47,7 @@ const Lesson = () => {
                 linkedIN:"https://www.linkedin.com/in/elina-amurlayeva-26726224b/"
             },
             lesson_plan:{
+                name:"Data Analysis",
                 plan_list:[
                     {
                         title:'Продвинутый Excel',
@@ -186,6 +187,7 @@ const Lesson = () => {
                 linkedIN:"https://www.linkedin.com/in/askarjkee/"
             },
             lesson_plan:{
+                name:"Frontend",
                 plan_list:[
                     {
                         title:'Введение в HTML и CSS',
@@ -277,6 +279,7 @@ const Lesson = () => {
                 linkedIN:"https://www.linkedin.com/in/zait-olzhas/"
             },
             lesson_plan:{
+                name:"C#",
                 plan_list:[
                     {
                         title:'Introduction to Programming Concepts and UML',
@@ -357,6 +360,7 @@ const Lesson = () => {
                 linkedIN:""
             },
             lesson_plan:{
+                name:"QA Engineering",
                 plan_list:[
                     {
                         title:'Introduction to Quality Assurance',
