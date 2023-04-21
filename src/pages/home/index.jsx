@@ -16,11 +16,11 @@ const Home = () => {
             <section id="vacancy" className="marginX">
                 <Carousel/>
             </section>
-            <section id="roadmap">
-                <StepProcess/>
-            </section>
             <section id="cards">
                 <Cards/>
+            </section>
+            <section id="roadmap">
+                <StepProcess/>
             </section>
             <section id="order" className="marginX">
                 <Order/>
