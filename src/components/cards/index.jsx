@@ -4,23 +4,35 @@ import CoinsIcon from "../../assets/coins.png"
 import NetworkIcon from "../../assets/network.png"
 import ProfiIcon from "../../assets/profi.png"
 import RewardIcon from "../../assets/reward.png"
+import GameIcon from "../../assets/game.png"
+import HundredIcon from "../../assets/100.png"
 
 const Cards = () => {
     const cards = [
-        {
-            image:CoinsIcon,
-            title:"Там где возможность зарабатывать",
-            description:"На экзаменах будут реальные заказы за решения которых ты сможешь заработать!",
-        },
         {
             image:NetworkIcon,
             title:"Нетворкинг",
             description:"Попадешь в закрытые чаты где ты сможешь обмениваться опытом и знаниями",
         },
         {
+            image:GameIcon,
+            title:"Геймификация",
+            description:"За каждое выполнение задач студенты начисляются баллы",
+        },
+        {
+            image:HundredIcon,
+            title:"100% практики",
+            description:"максимум проектного обучения и минимум теории",
+        },
+        {
             image:ProfiIcon,
             title:"Актуальность и экспертность",
             description:"Наши преподаватели- профессионалы своего дела! Помогут прийти к результату",
+        },
+        {
+            image:CoinsIcon,
+            title:"Возможность зарабатывать",
+            description:"На экзаменах будут реальные заказы за решения которых ты сможешь заработать!",
         },
         {
             image:RewardIcon,
