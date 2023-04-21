@@ -4,6 +4,7 @@ import Carousel from "../../components/carousel";
 import StepProcess from "../../components/step-process";
 import Order from "../../components/order";
 import StudentWorks from "../../components/studend-works";
+import Cards from "../../components/cards";
 
 
 const Home = () => {
@@ -17,6 +18,9 @@ const Home = () => {
             </section>
             <section id="roadmap">
                 <StepProcess/>
+            </section>
+            <section id="cards" className="marginX">
+                <Cards/>
             </section>
             <section id="order" className="marginX">
                 <Order/>

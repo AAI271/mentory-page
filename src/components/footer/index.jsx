@@ -34,8 +34,8 @@ const Footer = () => {
                 <hr/>
                 <div className="footer__info">
                     <p className="footer__info-title"><strong>Наши контакты</strong></p>
-                    <p><a href="tel:123-456-7890">123-456-7890</a></p>
-                    <p>123 Anywhere</p>
+                    <p><a href="tel:+77710110102">+7 (771) 011-01-02</a></p>
+                    <p>Астана,Проспект Мангилик Ел,С3.5,офис 203</p>
                     <p><a href="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</a></p>
                 </div>
 
