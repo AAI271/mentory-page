@@ -19,7 +19,7 @@ const Home = () => {
             <section id="roadmap">
                 <StepProcess/>
             </section>
-            <section id="cards" className="marginX">
+            <section id="cards">
                 <Cards/>
             </section>
             <section id="order" className="marginX">

@@ -9,7 +9,7 @@ const Cards = () => {
     const cards = [
         {
             image:CoinsIcon,
-            title:"Там где возможность зарабатывать. ",
+            title:"Там где возможность зарабатывать",
             description:"На экзаменах будут реальные заказы за решения которых ты сможешь заработать!",
         },
         {
@@ -29,7 +29,7 @@ const Cards = () => {
         },
     ]
     return (
-        <div className="cards">
+        <div className="cards marginX">
             <h3>Обучения с реальными возможностями</h3>
             <div className="cards__container">
                 {cards.map(card => (

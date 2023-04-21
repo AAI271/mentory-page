@@ -1,3 +1,6 @@
+.cards.marginX{
+    max-width: 1200px;
+}
 .cards__container{
     display: flex;
     flex-wrap: wrap;
@@ -9,7 +12,7 @@
     min-height: 250px;
     text-align: center;
     padding: 10px;
-    margin: 15px auto;
+    margin: 35px auto;
 }
 .cards__item h3{
     font-size: 20px;
