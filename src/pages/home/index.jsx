@@ -25,9 +25,9 @@ const Home = () => {
             <section id="order" className="marginX">
                 <Order/>
             </section>
-            <section id="student-works" className="marginX">
-                <StudentWorks/>
-            </section>
+            {/*<section id="student-works" className="marginX">*/}
+            {/*    <StudentWorks/>*/}
+            {/*</section>*/}
         </main>
     );
 };

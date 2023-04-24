@@ -46,7 +46,7 @@ footer hr{
     display: none;
     margin: 10px 0;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 770px) {
     footer{
         margin-top: 100px;
     }
