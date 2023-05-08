@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import "./index.css"
 import {Link} from "react-router-dom";
-import LeftIcon from "../../assets/lefticon.png"
-import RightIcon from "../../assets/righticon.png"
+import LeftIcon from "../../assets/leftArrow.svg"
+import RightIcon from "../../assets/rightArrow.svg"
 
 
 function Carousel() {
@@ -164,19 +164,25 @@ function Carousel() {
                 <div className="arrow-icon">
                     {
                         activeStep!==0&&(
-                            <img
-                                onClick={() => {activeStep&&setActiveStep(activeStep-1)}}
+                            <div
                                 className="arrow-icon-left"
-                                src={LeftIcon} alt="icon"/>
+                            >
+                                <img
+                                    onClick={() => {activeStep&&setActiveStep(activeStep-1)}}
+                                    src={LeftIcon} alt="icon"/>
+                            </div>
                         )
                     }
                     {
                         activeStep<3&&(
-                            <img
-                                onClick={() => {activeStep<4&&setActiveStep(activeStep+1)}}
+                            <div
                                 className="arrow-icon-right"
-                                src={RightIcon}
-                                alt="icon"/>
+                            >
+                                <img
+                                    onClick={() => {activeStep<4&&setActiveStep(activeStep+1)}}
+                                    src={RightIcon}
+                                    alt="icon"/>
+                            </div>
                         )
                     }
                 </div>

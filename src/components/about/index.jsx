@@ -1,24 +1,30 @@
 import React from 'react';
 import "./index.css"
-import BgImage from "../../assets/bg.png";
+import aboutImg from "../../assets/about.png";
+
 
 const About = () => {
     return (
-        <div className="about main-box" style={{backgroundImage: `url(${BgImage})`}}>
+        <div className="about">
             <div className="about__text">
                 <h2>
-                    Готовим специалистов
-                    под вакансии в IT компаниях
+                    Learn, create, and sell encouraging courses
                 </h2>
                 <h3>
-                    Учись и зарабатывай
+                    Study exclusive courses on the subject of technical education and much more
                 </h3>
+                <div className="about__form">
+                    <button className="about__btn filled">
+                        Explore
+                    </button>
+                    <button className="about__btn empty">
+                        Create
+                    </button>
+                </div>
             </div>
-            <form className="about__form" action="#">
-                <input className="my-input" type="text" placeholder="Имя"/>
-                <input className="my-input" type="tel" placeholder="Номер телефона"/>
-                <button className="my-btn" type="submit">Записаться на курс</button>
-            </form>
+            <div className="about__img">
+                <img width="500" src={aboutImg} alt=""/>
+            </div>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 footer{
     margin-top: 180px;
+    background: linear-gradient(90deg, #7affea 0%, #deabff 100%);
 }
 footer .marginX{
     max-width: 1300px;
@@ -13,6 +14,7 @@ footer .marginX{
 }
 .footer__info{
     overflow: hidden;
+    margin: 10px 0 100px 0;
 }
 .footer__info p{
     padding: 0 0 8px 5px;
@@ -20,7 +22,7 @@ footer .marginX{
 p.footer__info-title{
     width: 193px;
     font-size: 20px;
-    padding: 0 0 15px 0;
+    padding: 0 0 55px 0;
 }
 .footer__info a{
     text-decoration: none;
@@ -36,11 +38,30 @@ p.footer__info-title{
     margin: 0 auto;
 }
 .footer__contacts{
-    width: 160px;
+    width: 250px;
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
 }
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+    margin-left: 200px;
+}
+
+.footer__links p{
+    color: gray;
+
+}
+.footer__links-title{
+    padding-left: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
 
 footer hr{
     display: none;

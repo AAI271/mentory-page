@@ -33,9 +33,14 @@ const Header = () => {
                             Вакансии
                         </a>
                     </li>
-                    <li className="nav-link last">
+                    <li className="nav-link nav-link_empty">
                         <a href="#order">
                             Записаться
+                        </a>
+                    </li>
+                    <li className="nav-link nav-link_filled">
+                        <a href="#order">
+                            Войти
                         </a>
                     </li>
                 </ul>
