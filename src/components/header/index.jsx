@@ -10,31 +10,31 @@ const Header = () => {
     }
     const location = window.location.origin
     return (
-        <header className="marginX">
+        <header>
             <div className="logo">
                 <a href={location}>
-                <img width="125" src={Logo} alt="logo"/>
+                <img width="165" src={Logo} alt="logo"/>
                 </a>
             </div>
             <nav className="nav">
                 <ul id="navbar">
                     <li className="nav-link">
-                        <a href="#about">
+                        <a href="#about" className='header__text'>
                             О нас
                         </a>
                     </li>
-                    <li className="nav-link">
-                        <a href="#roadmap">
+                    <li className="nav-link" >
+                        <a href="#roadmap" className='header__text'>
                             Обучение
                         </a>
                     </li>
                     <li className="nav-link">
-                        <a href="#vacancy">
+                        <a href="#vacancy" className='header__text'>
                             Вакансии
                         </a>
                     </li>
                     <li className="nav-link nav-link_empty">
-                        <a href="#order">
+                        <a href="#order" className='header__text'>
                             Записаться
                         </a>
                     </li>

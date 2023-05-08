@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import {
     createBrowserRouter,
-    createHashRouter, Link,
     RouterProvider,
 } from "react-router-dom";
 import './index.css'
@@ -11,6 +10,7 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import Footer from "./components/footer";
 import Lesson from "./pages/lesson";
+import "./assets/font/Sofia-sans.css"
 
 
 const router = createBrowserRouter([

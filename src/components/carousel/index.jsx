@@ -166,9 +166,9 @@ function Carousel() {
                         activeStep!==0&&(
                             <div
                                 className="arrow-icon-left"
+                                onClick={() => {activeStep&&setActiveStep(activeStep-1)}}
                             >
                                 <img
-                                    onClick={() => {activeStep&&setActiveStep(activeStep-1)}}
                                     src={LeftIcon} alt="icon"/>
                             </div>
                         )
@@ -177,9 +177,9 @@ function Carousel() {
                         activeStep<3&&(
                             <div
                                 className="arrow-icon-right"
+                                onClick={() => {activeStep<4&&setActiveStep(activeStep+1)}}
                             >
                                 <img
-                                    onClick={() => {activeStep<4&&setActiveStep(activeStep+1)}}
                                     src={RightIcon}
                                     alt="icon"/>
                             </div>

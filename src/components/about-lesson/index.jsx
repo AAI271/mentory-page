@@ -10,8 +10,10 @@ const AboutLesson = ( {aboutLesson}) => {
                 </h2>
                 <div className="about-lesson__stack-list">
                     {aboutLesson.stackList.map((stack,index)=>(
-                        <div key={`stack ${index}`} className="about-lesson__stack">
-                            {stack}
+                        <div key={`stack ${index}`} className="about-lesson__stack-border">
+                            <div className="about-lesson__stack">
+                                <p><strong>{stack}</strong></p>
+                            </div>
                         </div>
                     ))}
                 </div>

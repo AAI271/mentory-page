@@ -6,7 +6,9 @@ const LessonInfo = ( {lessonInfo}) => {
         <div className="lesson-info main-box">
             <h2>О проекте</h2>
             <div className="lesson-info__text">
-                {lessonInfo.text}
+                {lessonInfo.text.map((item,index)=>(
+                    <p key={`lesson-info-${index}`}>{item}</p>
+                ))}
             </div>
         </div>
     );

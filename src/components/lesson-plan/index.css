@@ -1,37 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
 .lesson-plan{
-    background-color:#E9E9E9;
     border-radius: 15px;
     padding: 50px 75px;
     margin: 0 50px;
 }
 .lesson-plan h2{
+    font-family: 'Outfit', sans-serif;
     font-size: 70px;
-    font-weight: 500;
+    font-weight: 700;
     padding: 10px 0;
 }
 .lesson-plan h3{
-    font-size: 38px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 500;
 }
 .lesson-plan hr{
-    margin: 20px 0;
+    margin: 20px 0 20px 260px;
+    background: linear-gradient(90deg, #65f6e5 -2.2%, #6fd4ff 50.14%, #8250ff 100%) fixed;
+    border: none;
+    height: 3px;
 }
 .lesson-plan__item-container{
     display: flex;
-    align-items: center;
 }
 .lesson-plan__item-week{
     text-align: center;
 }
 .lesson-plan__item-text{
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 180px;
 }
 .lesson-plan__item-text li{
     font-size: 15px;
+    padding: 5px 0;
+}
+.lesson-plan__item-text li::marker{
+    font-size: 10px;
 }
 .lesson-plan__item-text ul{
     margin-left: 30px;
+    padding-top: 10px;
 }
 
 @media only screen and (max-width: 810px) {

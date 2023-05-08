@@ -19,13 +19,22 @@
     margin: 10px 0;
 }
 .about-lesson__stack{
-    background-color:#e44853;
-    color: white;
-    border-radius: 10px;
-    margin: 3px;
+    background-color:white;
+    border-radius: 15px;
+    margin: 2px 3px;
     padding: 5px;
     min-width: 100px;
     text-align: center;
+}
+.about-lesson__stack p{
+    background: linear-gradient(90deg, #31B3EB 0%, #8F64FF 100%) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-lesson__stack-border{
+    border-radius: 17px;
+    margin: 10px;
+    background: linear-gradient(90deg, #31B3EB 0%, #8F64FF 100%) fixed;
 }
 .about-lesson__form .my-input{
     border-color: black;

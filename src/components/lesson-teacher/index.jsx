@@ -1,5 +1,6 @@
 import React from 'react';
 import "./index.css"
+import Linkedin from "../../assets/linkedin.svg"
 
 const LessonTeacher = ({lessonTeacher}) => {
     return (
@@ -7,24 +8,48 @@ const LessonTeacher = ({lessonTeacher}) => {
             <h3 className="lesson-teacher__title">Наш преподаватель:</h3>
             <div className="lesson-teacher__content main-box">
                 <div className="lesson-teacher__img">
-                    <img width="300"  src={lessonTeacher.image} alt=""/>
+                    <img width="250"  src={lessonTeacher.image} alt=""/>
                 </div>
                 <div className="lesson-teacher__about">
-                    <p className="lesson-teacher__name">
-                        <strong>{lessonTeacher.name}</strong> - {lessonTeacher.description}
-                    </p>
-
-                    <p>
-                        {lessonTeacher.experience}
-                    </p>
-                    {lessonTeacher.graduated&&(
+                    <div className="lesson-teacher__name">
                         <p>
-                            Graduated {lessonTeacher.graduated}
+                            <strong>{lessonTeacher.name}</strong>
                         </p>
-                    )}
-                    {lessonTeacher.linkedIN&&(
-                        <h3 className="lesson-teacher__linkedIn"><a href={lessonTeacher.linkedIN}>LinkedIn</a></h3>
-                    )}
+                        {lessonTeacher.linkedIN&&(
+                            <a href={lessonTeacher.linkedIN}>
+                                <img src={Linkedin} alt=""/>
+                            </a>
+                        )}
+                    </div>
+                    <div className="lesson-teacher__info-list">
+                        <div className="lesson-teacher__info">
+                            <p>
+                                {lessonTeacher.description}
+                            </p>
+                        </div>
+                        <div className="lesson-teacher__info">
+                            <p>
+                                {lessonTeacher.experience}
+                            </p>
+                        </div>
+                        {lessonTeacher.graduated&&(
+                            <div className="lesson-teacher__info">
+                                <p>
+                                    Graduated {lessonTeacher.graduated}
+                                </p>
+                            </div>
+                        )}
+                    </div>
+                    <p>Навыки:</p>
+                    <div className="lesson-teacher__skills">
+                        <div className="lesson-teacher__skills-list">
+                            {lessonTeacher.skills.map((item,index)=>(
+                                <div key={`lesson-teacher__skill- ${index}`} className="lesson-teacher__skill">
+                                    {item}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
