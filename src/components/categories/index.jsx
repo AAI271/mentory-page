@@ -9,12 +9,6 @@ import CategoryImage5 from "../../assets/categories/Group 5048.svg"
 import CategoryImage6 from "../../assets/categories/Group 5042.svg"
 import CategoryImage7 from "../../assets/categories/Group 5044.svg"
 import CategoryImage8 from "../../assets/categories/Group 5051.svg"
-import CoinsIcon from "../../assets/coins.png"
-import NetworkIcon from "../../assets/network.png"
-import ProfiIcon from "../../assets/profi.png"
-import RewardIcon from "../../assets/reward.png"
-import GameIcon from "../../assets/game.png"
-import HundredIcon from "../../assets/100.png"
 
 const Categories = () => {
     const categories = [
