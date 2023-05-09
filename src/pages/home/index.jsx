@@ -1,7 +1,6 @@
 import React from 'react';
 import About from "../../components/about";
 import Carousel from "../../components/carousel";
-import StepProcess from "../../components/step-process";
 import Order from "../../components/order";
 import Partners from "../../components/partners";
 import WorkStep from "../../components/work-step";

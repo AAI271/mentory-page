@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./index.css"
 import Burger from "../../assets/burger.svg"
 import Logo from "../../assets/Logo.svg"
+import Modal from "../modal";
 
 const Header = () => {
+    const [modal, setModal]=useState(false)
+
     function toggleNav() {
         const navbar = document.getElementById("navbar")
         navbar.classList.toggle("show")
@@ -33,8 +36,8 @@ const Header = () => {
                             Вакансии
                         </a>
                     </li>
-                    <li className="nav-link nav-link_empty">
-                        <a href="#order" className='header__text'>
+                    <li className="nav-link nav-link_empty" onClick={()=>{setModal(true)}}>
+                        <a className='header__text'>
                             Записаться
                         </a>
                     </li>
@@ -48,6 +51,7 @@ const Header = () => {
             <div id="burger" className="burger mobile" onClick={toggleNav}>
                 <img src={Burger} alt="burger"/>
             </div>
+            {modal?<Modal setModal={setModal}/>:<></>}
         </header>
 
 );

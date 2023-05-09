@@ -1,0 +1,49 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.38);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    box-shadow: 0px 0px 26px 1px rgba(0, 0, 0, 0.15);
+}
+.modal__content{
+    display: flex;
+    padding: 40px;
+    border-radius: 20px;
+    background: white;
+    max-width: 800px;
+    width: 100%;
+    height: 230px;
+    align-items: center;
+    margin-bottom: 20vh;
+    animation-name: animate;
+    animation-duration: 0.5s;
+}
+.modal__text{
+    max-width: 500px;
+    padding: 0 20px 30px 0;
+}
+.modal__text h3{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.modal__form{
+    max-width: 500px;
+    width: 100%;
+}
+.modal__form form{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@keyframes animate {
+    from {margin-bottom: 15vh}
+    to {margin-bottom: 20vh}
+}

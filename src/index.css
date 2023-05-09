@@ -34,7 +34,7 @@ h3{
     padding: 20px;
     border: 2px solid #8F64FF;
     border-radius: 25px;
-    color: white;
+    color: black;
     width: calc(100% - 43px);
 }
 .my-input:focus{

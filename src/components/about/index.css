@@ -19,11 +19,14 @@
 .about__btn{
     border-radius: 20px;
     padding: 10px;
-    width: 250px;
+    width: 80%;
     font-weight: 700;
     font-size: 16px;
     box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+    margin: auto;
     transition: box-shadow 0.5s;
+    color: white;
+    cursor: pointer;
 }
 .about__btn:hover{
     box-shadow: none;
