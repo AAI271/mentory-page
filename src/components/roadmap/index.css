@@ -1,0 +1,133 @@
+.roadmap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.roadmap__step{
+    display: flex;
+}
+.roadmap__step.left{
+    margin-left: -330px;
+}
+.roadmap__step.right{
+    margin-right: -330px;
+}
+.roadmap__circle-container{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35px;
+}
+.roadmap__circle-half{
+    background-color: rgb(225, 225, 225);
+}
+.roadmap__circle-half.left{
+    position: absolute;
+    left: 0;
+    width: 90px;
+    height: 180px;
+    border-radius:100px 0 0 100px;
+    z-index: -1;
+}
+.roadmap__circle-half.right{
+    position: absolute;
+    right: 0;
+    width: 90px;
+    height: 180px;
+    border-radius:0 100px 100px 0;
+    z-index: -1;
+}
+.roadmap__circle-half.green, .roadmap__things-circle.green, .roadmap__things-line.green{
+    background-color: #65F6E5FF;
+}
+.roadmap__circle-half.green-blue{
+    background: linear-gradient(#65F6E5FF 0%    ,#65F6E5FF 15%,#31B3EB 90%,#31B3EB 100%);
+}
+.roadmap__circle-half.blue, .roadmap__things-circle.blue, .roadmap__things-line.blue{
+    background: #31B3EB;
+}
+.roadmap__circle-half.blue-violet{
+    background: linear-gradient(#31B3EB 40%,#8F64FF);
+}
+.roadmap__things-circle.violet, .roadmap__things-line.violet{
+    background: #8F64FF;
+}
+.roadmap__circle-half.default{
+    z-index: -2;
+}
+.roadmap__inner-circle{
+    width: 110px;
+    height: 110px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+}
+.roadmap__inner-circle p{
+    font-size: 20px;
+}
+
+.roadmap__things{
+    display: flex;
+    align-items: center;
+    width: 350px;
+}
+.roadmap__step:hover .roadmap__price{
+    opacity: 1;
+}
+.roadmap__step:hover .roadmap__things-circle{
+    transform: scale(2);
+}
+.roadmap__things-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3e63e7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+.roadmap__price{
+    color: white;
+    font-size: 12px !important;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.roadmap__things-line{
+    height: 5px;
+    background: #3e63e7;
+    width: 300px;
+    z-index: -5;
+}
+
+.roadmap__step.right .roadmap__things-circle{
+    order: 2;
+}
+.roadmap__step.right .roadmap__things-line{
+    margin-left: -10px;
+    order: 1;
+}
+.roadmap__description{
+    width: 330px;
+    text-align: center;
+}
+
+.roadmap__description p{
+    font-size: 20px;
+    font-weight: 700;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+

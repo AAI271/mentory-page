@@ -43,6 +43,12 @@ p.footer__info-title{
     display: flex;
     justify-content: space-between;
 }
+.footer__contacts a{
+    transition: margin-top 0.3s;
+}
+.footer__contacts a:hover{
+    margin-top: -5px;
+}
 
 .footer__links{
     display: flex;

@@ -4,8 +4,9 @@ import Carousel from "../../components/carousel";
 import StepProcess from "../../components/step-process";
 import Order from "../../components/order";
 import Partners from "../../components/partners";
-import Cards from "../../components/cards";
 import WorkStep from "../../components/work-step";
+import Categories from "../../components/categories";
+import Roadmap from "../../components/roadmap";
 
 
 const Home = () => {
@@ -18,9 +19,9 @@ const Home = () => {
                 <Carousel/>
             </section>
 
-            {/*<section id="cards">*/}
-            {/*    <Cards/>*/}
-            {/*</section>*/}
+            <section id="categories">
+                <Categories/>
+            </section>
             {/*<section id="roadmap">*/}
             {/*    <StepProcess/>*/}
             {/*</section>*/}
@@ -32,6 +33,9 @@ const Home = () => {
             </section>
             <section id="partners" className="marginX">
                 <Partners/>
+            </section>
+            <section className="marginX">
+                <Roadmap/>
             </section>
         </main>
     );

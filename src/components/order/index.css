@@ -11,7 +11,13 @@
     min-width: 370px;
 }
 .order__text h2{
-    font-size: 34px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.order__text p{
+    font-size: 24px;
+    font-weight: 500;
 }
 .order__form{
     width: 45%;
@@ -21,17 +27,6 @@
     padding: 30px;
     height: 200px;
     max-height: 400px;
-}
-.order__form .my-btn{
-    color: white;
-    background-color: #3E63E7 ;
-}
-.order__form .my-input{
-    border-color: black;
-    color: black;
-}
-.order__form .my-input::placeholder{
-    color: black;
 }
 
 .order__form div{

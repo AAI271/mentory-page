@@ -4,6 +4,7 @@
 }
 .about-lesson__content{
     width: 70%;
+    padding-right: 20px;
 }
 .about-lesson__form{
     width: 55%;
@@ -35,14 +36,6 @@
     border-radius: 17px;
     margin: 10px;
     background: linear-gradient(90deg, #31B3EB 0%, #8F64FF 100%) fixed;
-}
-.about-lesson__form .my-input{
-    border-color: black;
-    color: black;
-}
-
-.about-lesson__form .my-input::placeholder{
-    color: black;
 }
 .about-lesson__form .my-btn{
     background-color: #3E63E7;
