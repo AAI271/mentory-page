@@ -3,6 +3,9 @@
     flex-direction: column;
     align-items: center;
 }
+.roadmap__container{
+    margin-top: 100px;
+}
 .roadmap__step{
     display: flex;
 }
@@ -14,12 +17,12 @@
 }
 .roadmap__circle-container{
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -35px;
+    margin-top: -40px;
 }
 .roadmap__circle-half{
     background-color: rgb(225, 225, 225);
@@ -27,16 +30,16 @@
 .roadmap__circle-half.left{
     position: absolute;
     left: 0;
-    width: 90px;
-    height: 180px;
+    width: 100px;
+    height: 200px;
     border-radius:100px 0 0 100px;
     z-index: -1;
 }
 .roadmap__circle-half.right{
     position: absolute;
     right: 0;
-    width: 90px;
-    height: 180px;
+    width: 100px;
+    height: 200px;
     border-radius:0 100px 100px 0;
     z-index: -1;
 }
@@ -59,8 +62,8 @@
     z-index: -2;
 }
 .roadmap__inner-circle{
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     background: white;
     border-radius: 50%;
     display: flex;
@@ -68,7 +71,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 31px;
     text-align: center;
 }
 .roadmap__inner-circle p{

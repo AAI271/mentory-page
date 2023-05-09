@@ -18,25 +18,25 @@ const Home = () => {
             <section id="vacancy" className="marginX">
                 <Carousel/>
             </section>
-
+            <section id="work-step" className="marginX">
+                <WorkStep/>
+            </section>
             <section id="categories">
                 <Categories/>
+            </section>
+            <section className="marginX">
+                <Roadmap/>
             </section>
             {/*<section id="roadmap">*/}
             {/*    <StepProcess/>*/}
             {/*</section>*/}
-            <section id="work-step" className="marginX">
-                <WorkStep/>
-            </section>
             <section id="order" className="marginX">
                 <Order/>
             </section>
             <section id="partners" className="marginX">
                 <Partners/>
             </section>
-            <section className="marginX">
-                <Roadmap/>
-            </section>
+
         </main>
     );
 };
