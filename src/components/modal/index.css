@@ -4,12 +4,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.38);
+    background-color: rgba(0, 0, 0, 0.38);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 5000;
-    box-shadow: 0px 0px 26px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 26px 1px rgba(0, 0, 0, 0.15);
+    animation-name: modalBg;
+    animation-duration: 0.5s;
 }
 .modal__content{
     display: flex;
@@ -46,4 +48,8 @@
 @keyframes animate {
     from {margin-bottom: 15vh}
     to {margin-bottom: 20vh}
+}
+@keyframes modalBg {
+    from {background-color: transparent}
+    to {background-color: rgba(0, 0, 0, 0.38);}
 }
