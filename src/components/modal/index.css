@@ -11,7 +11,7 @@
     z-index: 5000;
     box-shadow: 0 0 26px 1px rgba(0, 0, 0, 0.15);
     animation-name: modalBg;
-    animation-duration: 0.5s;
+    transition: background-color 0.5s;
 }
 .modal__content{
     display: flex;

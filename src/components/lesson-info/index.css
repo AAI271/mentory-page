@@ -1,7 +1,8 @@
 .lesson-info{
     display: flex;
     justify-content: space-between;
-    margin: 0 30px;
+    margin: 30px;
+
 }
 .lesson-info__text{
     width: 75%;

@@ -7,8 +7,17 @@
     width: 50%;
     min-width: 370px;
 }
+.about__img img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
 .about h3{
     padding-top:10px;
+    font-weight: 500;
+}
+.about h2{
+    font-weight: 700;
 }
 .about__form{
     width: 90%;
@@ -33,7 +42,7 @@
 }
 .about__btn.filled{
     background: linear-gradient(90deg, #21D6C9 0%, #31B3EB 100%);
-    border:none
+    border:none;
 }
 .about__btn.empty{
     background: none;
@@ -43,12 +52,19 @@
     .about__text{
         width: 100%;
         min-width: 0;
+        order: 2;
+        text-align: center;
+    }
+    .about h2{
+        margin-bottom: 20px;
     }
     .about{
         padding: 20px;
         background-size: cover;
+        flex-direction: column;
     }
-    .about.main-box form{
-        height: 190px;
+    .about__form{
+        margin: auto;
+        max-width: 100%;
     }
 }

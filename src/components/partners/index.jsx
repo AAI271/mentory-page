@@ -12,7 +12,6 @@ const Partners = () => {
         <div className="partners">
             <h3>Our partners</h3>
             <div className="partners__content">
-                <div className="partners__first-row">
                     <a href="">
                         <img src={DaypayLogo} alt=""/>
                     </a>
@@ -22,8 +21,6 @@ const Partners = () => {
                     <a href="#">
                         <img src={LansoftLogo} alt=""/>
                     </a>
-                </div>
-                <div className="partners__second-row">
                     <a href="#">
                         <img src={ItLogo} alt=""/>
                     </a>
@@ -33,7 +30,7 @@ const Partners = () => {
                     <a href="#">
                         <img src={WebsoftLogo} alt=""/>
                     </a>
-                </div>
+
             </div>
         </div>
     );

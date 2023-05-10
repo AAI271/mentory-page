@@ -8,12 +8,8 @@ const Roadmap = () => {
             <div className="roadmap__container">
                 <div className="roadmap__step">
                     <div className="roadmap__circle-container">
-                        <div className="roadmap__circle-half left green">
-
-                        </div>
-                        <div className="roadmap__circle-half right default">
-
-                        </div>
+                        <div className="roadmap__circle-half right default"/>
+                        <div className="roadmap__circle-half left green"/>
                         <div className="roadmap__inner-circle">
                             Ты здесь
                         </div>
@@ -32,29 +28,33 @@ const Roadmap = () => {
                         <p>Доработка функции мобильного приложения</p>
                     </div>
                     <div className="roadmap__circle-container">
-                        <div className="roadmap__circle-half left default">
-
-                        </div>
-                        <div className="roadmap__circle-half right green-blue">
-
-                        </div>
+                        <div className="roadmap__circle-half left default"/>
+                        <div className="roadmap__circle-half right green-blue"/>
                         <div className="roadmap__inner-circle">
-                            <p>Midterm</p>
-                            <h3>Exam 01</h3>
+                            <div className="roadmap__inner-circle-text">
+                                <p>Midterm</p>
+                                <h3>Exam 01</h3>
+                            </div>
+                            <div className="hidden-text">
+                                <p>Доработка функции мобильного приложения</p>
+                                <h3>+50$</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="roadmap__step right">
                     <div className="roadmap__circle-container">
-                        <div className="roadmap__circle-half blue left">
-
-                        </div>
-                        <div className="roadmap__circle-half right default">
-
-                        </div>
+                        <div className="roadmap__circle-half right default"/>
+                        <div className="roadmap__circle-half blue left"/>
                         <div className="roadmap__inner-circle">
-                            <p>Midterm</p>
-                            <h3>Exam 02</h3>
+                            <div className="roadmap__inner-circle-text">
+                                <p>Midterm</p>
+                                <h3>Exam 02</h3>
+                            </div>
+                            <div className="hidden-text">
+                                <p>Разработка модуля приложения - торговой системы</p>
+                                <h3>+150$</h3>
+                            </div>
                         </div>
                     </div>
                     <div className="roadmap__description">
@@ -82,15 +82,17 @@ const Roadmap = () => {
                         <p>Разработка модуля приложения - торговой системы</p>
                     </div>
                     <div className="roadmap__circle-container">
-                        <div className="roadmap__circle-half left default">
-
-                        </div>
-                        <div className="roadmap__circle-half right blue-violet">
-
-                        </div>
+                        <div className="roadmap__circle-half left default"/>
+                        <div className="roadmap__circle-half right blue-violet"/>
                         <div className="roadmap__inner-circle">
-                            <p>Final</p>
-                            <h3>Exam</h3>
+                            <div className="roadmap__inner-circle-text">
+                                <p>Final</p>
+                                <h3>Exam</h3>
+                            </div>
+                            <div className="hidden-text">
+                                <p>Разработка модуля приложения - торговой системы</p>
+                                <h3>+400$</h3>
+                            </div>
                         </div>
                     </div>
                 </div>

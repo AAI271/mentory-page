@@ -114,5 +114,7 @@ header nav ul {
         margin-right: 16px;
         width: 20px;
     }
-
+    .nav-link_empty,.nav-link_filled{
+        width: 50%;
+    }
 }

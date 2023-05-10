@@ -23,7 +23,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about__img">
-                <img width="500" src={aboutImg} alt=""/>
+                <img src={aboutImg} alt=""/>
             </div>
             {modal?<Modal setModal={setModal}/>:<></>}
         </div>

@@ -42,16 +42,16 @@ const Footer = () => {
                         <h5 className="footer__links-title">Join The Community</h5>
                         <div className="footer__contacts">
                             <a href="https://www.instagram.com/mentory_education/">
-                                <img width="50" src={Instagram} alt=""/>
+                                <img src={Instagram} alt=""/>
                             </a>
                             <a href="https://www.instagram.com/mentory_education/">
-                                <img width="50" src={Youtube} alt=""/>
+                                <img src={Youtube} alt=""/>
                             </a>
                             <a href="https://www.instagram.com/mentory_education/">
-                                <img width="50" src={Linkedin} alt=""/>
+                                <img src={Linkedin} alt=""/>
                             </a>
                             <a href="https://www.instagram.com/mentory_education/">
-                                <img width="50" src={Twitter} alt=""/>
+                                <img src={Twitter} alt=""/>
                             </a>
                         </div>
                     </div>

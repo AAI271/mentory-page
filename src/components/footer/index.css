@@ -67,7 +67,9 @@ p.footer__info-title{
     margin-bottom: 20px;
     font-size: 16px;
 }
-
+.footer__contacts img{
+    width: 50px;
+}
 
 footer hr{
     display: none;
@@ -77,7 +79,8 @@ footer hr{
     footer{
         margin-top: 100px;
     }
-    .footer__info a{
+    .footer__info{
+        margin-bottom: 0;
     }
     .footer__container{
         flex-direction: column;
@@ -86,5 +89,12 @@ footer hr{
     footer hr{
         display: block;
         width: 100%;
+    }
+    .footer__links{
+        margin: 0;
+        height: 150px;
+    }
+    .footer__contacts img{
+        width:45px;
     }
 }

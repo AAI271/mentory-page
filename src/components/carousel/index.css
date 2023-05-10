@@ -69,7 +69,7 @@
     margin: 20px 0;
 }
 
-.box{
+.step.box{
     text-align: center;
     width: 50%;
 }
@@ -83,7 +83,7 @@
     box-shadow: 0 0  0 2px rgb(255,255,255);
     padding: 20px;
     min-height: 300px;
-    margin: 20px 10px;
+    margin: 35px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -104,6 +104,7 @@
 .box__btn{
     width: 40%;
     margin: 0 auto;
+    min-width: 200px;
 }
 .box__btn .my-btn{
     color: #8250FFFF;
@@ -112,7 +113,7 @@
     border-radius: 20px;
     padding: 15px 0;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.84) -2.2%, rgba(255, 255, 255, 0.2) 50.14%);
-    box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.5s;
 }
 .box__btn .my-btn:hover{
@@ -127,6 +128,7 @@
 
 .arrow-icon div{
     position: absolute;
+    top: 45%;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -145,7 +147,7 @@
 }
 .arrow-icon-right{
     right: -50px;
-    background-color: #8250FFFF;;
+    background-color: #8250FFFF;
 }
 @media only screen and (max-width: 960px) {
 
@@ -154,7 +156,7 @@
         padding: 0;
     }
     .step p{
-        width: auto;
+        max-width: 100%;
     }
     .arrow-icon img{
         width: 25px;
@@ -173,11 +175,21 @@
     }
     .step-nav{
         width: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 46.5%;
+    }
+    .box__btn{
+        margin-bottom: -42px;
     }
     .step-nav .step-item{
         border-radius: 50%;
         width: 10px;
         height: 10px;
         padding: 0;
+    }
+    .box-lesson{
+        margin-top: 120px;
     }
 }

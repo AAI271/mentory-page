@@ -117,7 +117,7 @@ function Carousel() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="box">
+                                <div className="box box-lesson">
                                     <h3>
                                         Обучение
                                     </h3>

@@ -42,10 +42,16 @@
     padding-top: 10px;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 910px) {
     .lesson-plan{
-        padding: 35px;
+        padding: 5px;
         margin: 0;
+    }
+    .lesson-plan hr{
+        margin: 20px 0 20px 60px;
+        background: linear-gradient(90deg, #65f6e5 -2.2%, #6fd4ff 50.14%, #8250ff 100%) fixed;
+        border: none;
+        height: 3px;
     }
     .lesson-plan h2{
         width: 80px;
