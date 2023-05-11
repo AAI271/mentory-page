@@ -36,21 +36,7 @@ header nav ul {
     background-color: #3E63E7;
 }
 
-.nav-link_empty{
-    margin: 0 10px;
-    border: 2px solid #31B3EB;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-.nav-link_filled{
-    margin-left:10px;
-    background: linear-gradient(90deg, #31B3EB 0%, #8F64FF 100%);;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-.nav-link.nav-link_filled a{
-    color: white;
-}
+
 .nav-link a {
     font-size: 17px;
     font-weight: 700;
@@ -63,6 +49,19 @@ header nav ul {
 .nav-link img {
     margin-right: 16px;
     width: 30px;
+}
+.nav-link_empty{
+    margin: 0 10px;
+    border: 2px solid #31B3EB;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.nav-link .nav-link_filled{
+    margin-left:10px;
+    background: linear-gradient(90deg, #31B3EB 0%, #8F64FF 100%);;
+    padding: 7px 30px;
+    border-radius: 20px;
+    color: white;
 }
 .logo{
     height: 50px;

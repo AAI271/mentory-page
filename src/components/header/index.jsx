@@ -36,13 +36,13 @@ const Header = () => {
                             Вакансии
                         </a>
                     </li>
-                    <li className="nav-link nav-link_empty" onClick={()=>{setModal(true)}}>
-                        <a className='header__text'>
+                    <li className="nav-link" onClick={()=>{setModal(true)}}>
+                        <a className='header__text nav-link_empty'>
                             Записаться
                         </a>
                     </li>
-                    <li className="nav-link nav-link_filled">
-                        <a href="https://mentory.pro/auth/login ">
+                    <li className="nav-link">
+                        <a href="https://mentory.pro/auth/login " className="nav-link_filled">
                             Войти
                         </a>
                     </li>
