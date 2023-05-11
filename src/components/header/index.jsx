@@ -42,7 +42,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li className="nav-link nav-link_filled">
-                        <a href="#order">
+                        <a href="https://mentory.pro/auth/login ">
                             Войти
                         </a>
                     </li>

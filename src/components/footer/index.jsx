@@ -1,22 +1,21 @@
 import React from 'react';
 import "./index.css"
-import Logo from "../../assets/Logo.svg"
 import Instagram from "../../assets/footer__links/instagram.svg"
 import Youtube from "../../assets/footer__links/youtube.svg"
 import Linkedin from "../../assets/footer__links/linkedin.svg"
 import Twitter from "../../assets/footer__links/twitter.svg"
+import {Link} from "react-router-dom";
 
 const Footer = () => {
-    const location = window.location.origin
     return (
         <footer>
             <div className="footer__container marginX">
                 <div className="footer__info">
                     <p className="footer__info-title"><strong>Наши курсы</strong></p>
-                    <p><a href={`${location}/mentory-page/Data_Analysis`}>Data Analysis</a></p>
-                    <p><a href={`${location}/mentory-page/C_Sharp`}>C#</a></p>
-                    <p><a href={`${location}/mentory-page/Frontend`}>Frontend</a></p>
-                    <p><a href={`${location}/mentory-page/QA_Engineering`}>QA_Engineering</a></p>
+                    <p><Link to="mentory-page/Data_Analysis">Data Analysis</Link></p>
+                    <p><Link to="mentory-page/C_Sharp">C#</Link></p>
+                    <p><Link to="mentory-page/Frontend">Frontend</Link></p>
+                    <p><Link to="mentory-page/QA_Engineering">QA_Engineering</Link></p>
                 </div>
 
                 <hr/>
@@ -55,7 +54,6 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-
             </div>
         </footer>
     );

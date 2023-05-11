@@ -23,7 +23,7 @@ const Home = () => {
             <section id="categories">
                 <Categories/>
             </section>
-            <section className="marginX">
+            <section id="roadmap" className="marginX">
                 <Roadmap/>
             </section>
             {/*<section id="roadmap">*/}

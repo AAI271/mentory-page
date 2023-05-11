@@ -83,7 +83,7 @@ function Carousel() {
 
     return (
         <div>
-            <h3 className="carousel__title">Обучение для получение работы</h3>
+            <h3 className="carousel__title">Обучение для получения работы</h3>
             <div className="wrap">
                 <div className="viewbox">
                     <div className="steps" style={{ left: -activeStep * 100 + '%' }}>
