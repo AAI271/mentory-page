@@ -11,14 +11,14 @@ const About = () => {
         <div className="about">
             <div className="about__text">
                 <h2>
-                    Learn, create, and sell encouraging courses
+                    Обучение через выполнение настоящих заказов
                 </h2>
                 <h3>
-                    Study exclusive courses on the subject of technical education and much more
+                    Учись лучше других, выполняй задания, повышай свои скиллы и зарабатывай на Mentory
                 </h3>
                 <div className="about__form">
                     <button className="about__btn filled" onClick={()=>{setModal(true)}}>
-                        Explore
+                        Записаться
                     </button>
                 </div>
             </div>

@@ -24,12 +24,15 @@
     width: 100%;
     padding: 20px 10px;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .step p{
     line-height: 20px;
     max-width: 415px;
     width: 100%;
+    color: white;
 }
 
 .step-nav {
@@ -72,13 +75,14 @@
 .step.box{
     text-align: center;
     width: 50%;
+    color: white;
 }
 .box ul{
     padding-left: 15px;
 }
 .box__content{
     text-align: left;
-    color: black;
+    color: white;
     border-radius: 15px;
     box-shadow: 0 0  0 2px rgb(255,255,255);
     padding: 20px;
@@ -92,6 +96,7 @@
 .box__stack-list{
     display: flex;
     flex-wrap: wrap;
+    color: white;
 }
 .box__stack{
     background:none;

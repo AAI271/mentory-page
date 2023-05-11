@@ -41,17 +41,11 @@ const Footer = () => {
                     <div>
                         <h5 className="footer__links-title">Join The Community</h5>
                         <div className="footer__contacts">
-                            <a href="https://www.instagram.com/mentory_education/">
+                            <a href="https://instagram.com/mentory_education?igshid=NTc4MTIwNjQ2YQ==">
                                 <img src={Instagram} alt=""/>
                             </a>
-                            <a href="https://www.instagram.com/mentory_education/">
-                                <img src={Youtube} alt=""/>
-                            </a>
-                            <a href="https://www.instagram.com/mentory_education/">
+                            <a href="https://www.linkedin.com/company/mentoryedu/">
                                 <img src={Linkedin} alt=""/>
-                            </a>
-                            <a href="https://www.instagram.com/mentory_education/">
-                                <img src={Twitter} alt=""/>
                             </a>
                         </div>
                     </div>

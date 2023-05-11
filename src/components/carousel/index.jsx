@@ -83,12 +83,12 @@ function Carousel() {
 
     return (
         <div>
-            <h3 className="carousel__title">Обучения для получение работы</h3>
+            <h3 className="carousel__title">Обучение для получение работы</h3>
             <div className="wrap">
                 <div className="viewbox">
                     <div className="steps" style={{ left: -activeStep * 100 + '%' }}>
                         {steps.map((step, index) => (
-                            <div key={index} className={`step ${activeStep === index ? 'active' : ''}`}>
+                            <div key={index} className={`step`}>
                                 <div className="box">
                                     <h3>
                                         Вакансия

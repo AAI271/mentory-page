@@ -1,14 +1,18 @@
 import React from 'react';
 import "./style.css";
-import CategoryImage1 from "../../assets/categories/Group 2.svg"
+import CategoryImage1 from "../../assets/categories/devices.svg"
 import CategoryImage2 from "../../assets/categories/camera.svg"
-import CategoryImage3 from "../../assets/categories/Group 5032.svg"
-import CategoryImage4 from "../../assets/categories/Group 5036.svg"
-import CategoryImage9 from "../../assets/categories/Group 5038.svg"
-import CategoryImage5 from "../../assets/categories/Group 5048.svg"
-import CategoryImage6 from "../../assets/categories/Group 5042.svg"
-import CategoryImage7 from "../../assets/categories/Group 5044.svg"
-import CategoryImage8 from "../../assets/categories/Group 5051.svg"
+import CategoryImage3 from "../../assets/categories/notes edi.svg"
+import CategoryImage4 from "../../assets/categories/edit rectangle.svg"
+import CategoryImage5 from "../../assets/categories/Group.svg"
+import CategoryImage6 from "../../assets/categories/film.svg"
+import CategoryImage7 from "../../assets/categories/idea.svg"
+import CategoryImage8 from "../../assets/categories/bank.svg"
+import CategoryImage9 from "../../assets/categories/chart histogram.svg"
+import CategoryImage10 from "../../assets/categories/pie.svg"
+import CategoryImage11 from "../../assets/categories/filming.svg"
+import CategoryImage12 from "../../assets/categories/focus.svg"
+
 
 const Categories = () => {
     const categories = [
@@ -49,17 +53,17 @@ const Categories = () => {
             title:"Analytics",
         },
         {
-            image:CategoryImage9,
+            image:CategoryImage10,
             title:"Data Science",
         },
         {
-            image:CategoryImage6,
+            image:CategoryImage11,
             title:"Filmmaking",
         },
         {
-            image:CategoryImage2,
+            image:CategoryImage12,
             title:"Photoshop",
-        },
+        }
     ]
     return (
         <div className="categories marginX">
@@ -67,7 +71,7 @@ const Categories = () => {
             <div className="categories__container">
                 {categories.map((category,index) => (
                     <div key={category.title} className={`categories__item ${(index/3)%2===0?"down":""}`}>
-                        <img width="100" src={category.image} alt={category.image+""}/>
+                        <img  src={category.image} alt={category.image+""}/>
                         <h3>{category.title}</h3>
                     </div>
                 ))}

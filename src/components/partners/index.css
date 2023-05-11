@@ -42,6 +42,9 @@
 @media only screen and (max-width: 960px) {
     .partners__content{
         padding: 0 10px;
+        justify-content: space-around;
+        align-content: space-between;
+        align-items: center;
     }
     .student-works__text{
         padding: 20px 0;
