@@ -18,8 +18,9 @@
     padding: 40px;
     border-radius: 20px;
     background: white;
-    max-width: 800px;
+    max-width: 60vw;
     width: 100%;
+    min-width: 500px;
     height: 230px;
     align-items: center;
     margin-bottom: 20vh;
@@ -52,4 +53,19 @@
 @keyframes modalBg {
     from {background-color: transparent}
     to {background-color: rgba(0, 0, 0, 0.38);}
+}
+@media only screen and (max-width: 960px) {
+    .modal__content{
+        flex-direction: column;
+        margin-bottom: 10vh;
+        height: auto;
+        min-width: 250px;
+    }
+    .modal__form form{
+        height: 180px;
+    }
+    @keyframes animate {
+        from {margin-bottom: 5vh}
+        to {margin-bottom: 10vh}
+    }
 }
