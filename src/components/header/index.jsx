@@ -13,7 +13,7 @@ const Header = () => {
     }
     const location = window.location.origin
     return (
-        <header>
+        <header className="marginX">
             <div className="logo">
                 <a href={location}>
                 <img width="165" src={Logo} alt="logo"/>
