@@ -17,6 +17,7 @@
 .modal__form{
     max-width: 500px;
     width: 100%;
+    padding: 10px 0;
 }
 .modal__form form{
     height: 200px;
