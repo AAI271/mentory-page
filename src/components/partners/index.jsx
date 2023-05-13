@@ -12,22 +12,22 @@ const Partners = () => {
         <div className="partners">
             <h3>Our partners</h3>
             <div className="partners__content">
-                    <a href="">
+                    <a href="https://daypay.kz/">
                         <img src={DaypayLogo} alt=""/>
                     </a>
-                    <a href="">
+                    <a href="https://oilama.com/">
                         <img width="400" src={Oilama} alt=""/>
                     </a>
-                    <a href="#">
+                    <a href="https://www.lansoft.by/">
                         <img src={LansoftLogo} alt=""/>
                     </a>
-                    <a href="#">
+                    <a href="https://astanait.edu.kz/">
                         <img src={ItLogo} alt=""/>
                     </a>
-                    <a href="#">
+                    <a href="https://ltc.kz/">
                         <img src={LtcLogo} alt=""/>
                     </a>
-                    <a href="#">
+                    <a href="https://websoft.agency/">
                         <img src={WebsoftLogo} alt=""/>
                     </a>
 

@@ -97,6 +97,7 @@ header nav ul {
         z-index: 5000;
     }
 
+
     .nav-link {
         display: flex;;
         justify-content: left;
@@ -113,7 +114,7 @@ header nav ul {
         margin-right: 16px;
         width: 20px;
     }
-    .nav-link_empty,.nav-link_filled{
-        width: 50%;
+    .nav-link_empty,.nav-link .nav-link_filled{
+        margin: 0;
     }
 }

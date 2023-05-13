@@ -1,5 +1,6 @@
 import React from 'react';
 import "./index.css"
+import SendForm from "../send-form";
 
 const Modal = ({setModal}) => {
     const closeModal = (event)=>{
@@ -15,13 +16,7 @@ const Modal = ({setModal}) => {
                     <h3>Готов стать лучшим и начать зарабатывать сегодня?</h3>
                     <p>Оставь свои контактные данные и начни свой путь к успеху уже сейчас</p>
                 </div>
-                <div className="modal__form">
-                    <form >
-                        <input className="my-input" type="text" placeholder="Имя"/>
-                        <input className="my-input" type="tel" placeholder="Номер телефона"/>
-                        <button className="my-btn" type="submit">Отправить</button>
-                    </form>
-                </div>
+                <SendForm isEmail={false}/>
 
             </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./index.css"
+import SendForm from "../send-form";
 
 const Order = () => {
     return (
@@ -12,14 +13,7 @@ const Order = () => {
                     Выполнять будут выпускники, а мы ответственны за результат
                 </p>
             </div>
-            <form className="order__form" action="#">
-                <div>
-                    <input className="my-input" type="text" placeholder="Имя"/>
-                    <input className="my-input" type="tel" placeholder="Номер телефона"/>
-                </div>
-                <input className="my-input" type="email" placeholder="Email"/>
-                <button className="my-btn" type="submit">Отправить</button>
-            </form>
+            <SendForm isEmail={true} />
         </div>
     );
 };

@@ -45,6 +45,10 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.send-form{
+    max-width: 500px;
+    width: 100%;
+}
 
 @keyframes animate {
     from {margin-bottom: 15vh}
