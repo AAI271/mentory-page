@@ -16,7 +16,7 @@ const Modal = ({setModal}) => {
                     <h3>Готов стать лучшим и начать зарабатывать сегодня?</h3>
                     <p>Оставь свои контактные данные и начни свой путь к успеху уже сейчас</p>
                 </div>
-                <SendForm isEmail={false}/>
+                <SendForm isEmail={false} message_type={'Записался на курс'}/>
 
             </div>
         </div>

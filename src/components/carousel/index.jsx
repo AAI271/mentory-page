@@ -104,14 +104,14 @@ function Carousel() {
                                         <div className="box__info">
                                             <ul>
                                                 {step.vacancy.info.map((infoItem,index)=>(
-                                                    <li key={`infoItem${index}`}>{infoItem}</li>
+                                                    <li key={`infoItem${index}`}><p>{infoItem}</p></li>
                                                 ))}
                                             </ul>
                                         </div>
                                         <div className="box__stack-list">
                                             {step.vacancy.stackList.map((stack,index)=>(
                                                 <div key={`stack ${index}`} className="box__stack">
-                                                    {stack}
+                                                    <p>{stack}</p>
                                                 </div>
                                             ))}
                                         </div>
@@ -131,7 +131,7 @@ function Carousel() {
                                         <div className="box__stack-list">
                                             {step.lesson.stackList.map((stack,index)=>(
                                                 <div key={`stack ${index}`} className="box__stack">
-                                                    {stack}
+                                                    <p>{stack}</p>
                                                 </div>
                                             ))}
                                         </div>

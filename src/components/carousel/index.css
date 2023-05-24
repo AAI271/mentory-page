@@ -32,7 +32,6 @@
     line-height: 20px;
     max-width: 415px;
     width: 100%;
-    color: white;
 }
 
 .step-nav {
@@ -80,11 +79,22 @@
 .box ul{
     padding-left: 15px;
 }
+
+.box__content h3, .box__content h5,.box__content p{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Shadow effect */
+}
+.box__info ul li::marker{
+    color: #5d5d5d;
+}
+.box__stack p{
+     color: black;
+     text-shadow: none;
+ }
 .box__content{
     text-align: left;
     color: white;
     border-radius: 15px;
-    box-shadow: 0 0  0 2px rgb(255,255,255);
+    box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2);
     padding: 20px;
     min-height: 300px;
     margin: 35px 10px;
@@ -99,7 +109,7 @@
     color: white;
 }
 .box__stack{
-    background:none;
+    background:#fff;
     color: white;
     padding: 4px 15px;
     border: 1px solid white;
@@ -112,12 +122,12 @@
     min-width: 200px;
 }
 .box__btn .my-btn{
-    color: #8250FFFF;
+    color: #fff;
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
     padding: 15px 0;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.84) -2.2%, rgba(255, 255, 255, 0.2) 50.14%);
+    background: #8250FFFF;
     box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.5s;
 }

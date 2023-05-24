@@ -13,7 +13,7 @@ const Order = () => {
                     Выполнять будут выпускники, а мы ответственны за результат
                 </p>
             </div>
-            <SendForm isEmail={true} />
+            <SendForm isEmail={true} message_type='Фриланс заказ' />
         </div>
     );
 };

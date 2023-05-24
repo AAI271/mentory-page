@@ -1,5 +1,6 @@
 import React from 'react';
 import "./index.css"
+import SendForm from "../send-form";
 
 const AboutLesson = ( {aboutLesson}) => {
     return (
@@ -18,11 +19,7 @@ const AboutLesson = ( {aboutLesson}) => {
                     ))}
                 </div>
             </div>
-            <form className="about-lesson__form" action="#">
-                <input className="my-input" type="text" placeholder="Имя"/>
-                <input className="my-input" type="tel" placeholder="Номер телефона"/>
-                <button className="my-btn" type="submit">Получить консультацию</button>
-            </form>
+            <SendForm isEmail={false} message_type={'Получить консультацию'}/>
         </div>
     );
 };

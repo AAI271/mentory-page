@@ -1,3 +1,21 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row input{
+    width: 40%;
+}
+.column input{
+    margin: 5px 0;
+}
+
+.send-form__form{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .order__form{
     width: 100%;
     display: flex;

@@ -1,71 +1,52 @@
-import React, { useRef } from 'react';
+import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import "./index.css";
 
-const SendForm = ({ isEmail }) => {
-    const message_type = isEmail ? "Фриланс заказ" : "Записался на курс";
-    const orderForm = useRef();
-    const enrollForm = useRef();
+const SendForm = ({ isEmail,message_type }) => {
+    const sendForm = useRef();
     const message = useRef();
+    const [isSent, setIsSent] = useState(false)
+
+    const [messageText,setMessageText] = useState('')
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        const cleanForm = isEmail ? orderForm.current : enrollForm.current;
-        const form = cleanForm.cloneNode(true);
-
-        cleanForm.user_name.value=""
-        cleanForm.user_phone_number.value=""
-
-        if(form.user_name.value && form.user_phone_number.value){
-            emailjs.sendForm(
-                'service_m9jpkrq',
-                'template_jj54xxn',
-                form,
-                'qD7CZ7n1WvXqEb3GR')
-                .then((result) => {
-                    message.current.textContent="Ваше сообщение успешно отправлено."
-                    message.current.classList.remove('red')
-                    message.current.classList.add('green')
-                })
-                .catch((error) => {
-                    message.current.textContent="Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз."
-                    message.current.classList.remove('green')
-                    message.current.classList.add('red')
-                });
+        const form = {
+            user_name:sendForm.current.user_name.value,
+            user_phone_number:sendForm.current.user_phone_number.value,
+            message_type:message_type,
+            user_email:isEmail?sendForm.current.user_email.value:'',
+        }
+        if(form.user_name && form.user_phone_number) {
+            console.log(form)
+            setMessageText("Ваше сообщение успешно отправлено.")
+            setIsSent(true)
         }
         else{
-            message.current.textContent="Пожалуйста, заполните все обязательные поля формы."
-            message.current.classList.remove('red')
-            message.current.classList.add('red')
+            setMessageText("Пожалуйста, заполните все обязательные поля формы.")
+            setIsSent(false)
         }
+        // setMessageText("Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз.")
+        // setIsSent(false)
+
     };
 
     return (
         <div className="send-form">
-            {isEmail ? (
-                <form ref={orderForm} className="order__form" onSubmit={sendEmail}>
-                    <div>
-                        <input name="user_name" className="my-input" type="text" placeholder="Имя" />
-                        <input name="user_phone_number" className="my-input" type="tel" placeholder="Номер телефона" />
-                        <input name="message_type" style={{ display: "none" }} type="text" readOnly value={message_type} />
-                    </div>
-                    <input name="user_email" className="my-input" type="email" placeholder="Email" />
-                    <button className="my-btn" type="submit">Отправить</button>
-                </form>
-            ) : (
-                <div className="modal__form">
-                    <form ref={enrollForm}>
-                        <input name="user_name" className="my-input" type="text" placeholder="Имя" />
-                        <input name="user_phone_number" className="my-input" type="tel" placeholder="Номер телефона" />
-                        <input name="message_type" style={{ display: "none" }} type="text" readOnly value={message_type} />
-                        <button className="my-btn" type="button" onClick={sendEmail}>
-                            Отправить
-                        </button>
-                    </form>
+            <form ref={sendForm} className="send-form__form" onSubmit={sendEmail}>
+                <div className={isEmail?'row':'column'}>
+                    <input name="user_name" className="my-input" type="text" placeholder="Имя" />
+                    <input name="user_phone_number" className="my-input" type="tel" placeholder="Номер телефона" />
                 </div>
-            )}
-            <div ref={message} className="send-form__message"/>
+                {isEmail?
+                    <input name="user_email" className="my-input" type="email" placeholder="Email" />
+                    :<></>
+                }
+                <button className="my-btn" type="submit">{message_type==="Получить консультацию"?"Получить консультацию":"Отправить"}</button>
+            </form>
+            <div ref={message} className={`send-form__message ${isSent?'green':'red'}`}>
+                {messageText}
+            </div>
         </div>
     );
 };
