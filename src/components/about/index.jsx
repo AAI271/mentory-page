@@ -2,23 +2,26 @@ import React, {useState} from 'react';
 import "./index.css"
 import aboutImg from "../../assets/about.png";
 import Modal from "../modal";
+import {useTranslation} from "react-i18next";
 
 
 const About = () => {
+    const { t } = useTranslation();
+
     const [modal, setModal]=useState(false)
 
     return (
         <div className="about">
             <div className="about__text">
                 <h2>
-                    Обучение через выполнение настоящих заказов
+                    {t("aboutH2")}
                 </h2>
                 <h3>
-                    Учись лучше других, выполняй задания, повышай свои скиллы и зарабатывай на Mentory
+                    {t("aboutH3")}
                 </h3>
                 <div className="about__form">
                     <button className="about__btn filled" onClick={()=>{setModal(true)}}>
-                        Записаться
+                        {t("takeCourse")}
                     </button>
                 </div>
             </div>

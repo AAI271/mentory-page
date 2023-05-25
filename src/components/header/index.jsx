@@ -3,15 +3,20 @@ import "./index.css"
 import Burger from "../../assets/burger.svg"
 import Logo from "../../assets/Logo.svg"
 import Modal from "../modal";
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
     const [modal, setModal]=useState(false)
+
+    const { t } = useTranslation();
 
     function toggleNav() {
         const navbar = document.getElementById("navbar")
         navbar.classList.toggle("show")
     }
     const location = window.location.origin
+
+
     return (
         <header className="marginX">
             <div className="logo">
@@ -23,27 +28,27 @@ const Header = () => {
                 <ul id="navbar">
                     <li className="nav-link">
                         <a href="#about" className='header__text'>
-                            О нас
+                            {t("aboutUs")}
                         </a>
                     </li>
                     <li className="nav-link" >
                         <a href="#roadmap" className='header__text'>
-                            Обучение
+                            {t("education")}
                         </a>
                     </li>
                     <li className="nav-link">
                         <a href="#vacancy" className='header__text'>
-                            Вакансии
+                            {t("vacancies")}
                         </a>
                     </li>
                     <li className="nav-link" onClick={()=>{setModal(true)}}>
                         <a className='header__text nav-link_empty'>
-                            Записаться
+                            {t("takeCourse")}
                         </a>
                     </li>
                     <li className="nav-link">
                         <a href="https://mentory.pro/auth/login " className="nav-link_filled">
-                            Войти
+                            {t("singIn")}
                         </a>
                     </li>
                 </ul>

@@ -35,20 +35,6 @@
     padding-bottom: 10px;
     font-size: 30px;
 }
-.modal__form{
-    max-width: 500px;
-    width: 100%;
-}
-.modal__form form{
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.send-form{
-    max-width: 500px;
-    width: 100%;
-}
 
 @keyframes animate {
     from {margin-bottom: 15vh}

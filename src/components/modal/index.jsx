@@ -1,8 +1,10 @@
 import React from 'react';
 import "./index.css"
 import SendForm from "../send-form";
+import {useTranslation} from "react-i18next";
 
 const Modal = ({setModal}) => {
+    const {t} = useTranslation()
     const closeModal = (event)=>{
         event.preventDefault()
         if(event.target.classList.contains("modal")){
@@ -13,11 +15,10 @@ const Modal = ({setModal}) => {
         <div className="modal" onClick={closeModal}>
             <div className="modal__content animate">
                 <div className="modal__text">
-                    <h3>Готов стать лучшим и начать зарабатывать сегодня?</h3>
-                    <p>Оставь свои контактные данные и начни свой путь к успеху уже сейчас</p>
+                    <h3>{t("modalH3")}</h3>
+                    <p>{t("modalText")}</p>
                 </div>
                 <SendForm isEmail={false} message_type={'Записался на курс'}/>
-
             </div>
         </div>
     );

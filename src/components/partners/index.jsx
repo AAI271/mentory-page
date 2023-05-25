@@ -6,11 +6,13 @@ import Oilama from "../../assets/partners/oilama.svg"
 import ItLogo from "../../assets/partners/it.svg"
 import LtcLogo from "../../assets/partners/ltc.svg"
 import WebsoftLogo from "../../assets/partners/websoft.svg"
+import {useTranslation} from "react-i18next";
 
 const Partners = () => {
+    const {t} = useTranslation()
     return (
         <div className="partners">
-            <h3>Our partners</h3>
+            <h3>{t("partners")}</h3>
             <div className="partners__content">
                     <a href="https://daypay.kz/">
                         <img src={DaypayLogo} alt=""/>

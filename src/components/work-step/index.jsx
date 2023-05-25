@@ -9,8 +9,11 @@ import studentsIcon from "../../assets/step-works-icon/students.svg"
 import pacmanImg from "../../assets/pakman.png"
 import ghostImg from "../../assets/ghost.png"
 import "./index.css"
+import {useTranslation} from "react-i18next";
 
 const WorkStep = () => {
+    const { t } = useTranslation();
+
 
     useEffect(() => {
         const boxes = document.querySelectorAll('.work-step__box');
@@ -49,8 +52,8 @@ const WorkStep = () => {
                             <img src={loginIcon} alt=""/>
                         </div>
                         <div className="work-step__text">
-                            <h3>Вход студента на платформу</h3>
-                            <p>Выбирает курс, подходящий по уровню и теме.</p>
+                            <h3>{t("workStep1Title")}</h3>
+                            <p>{t("workStep1Description")}</p>
                         </div>
                     </div>
                     <div data-step="3" className="work-step__box">
@@ -58,8 +61,8 @@ const WorkStep = () => {
                             <img src={profitIcon} alt=""/>
                         </div>
                         <div className="work-step__text">
-                            <h3>Learn2Earn</h3>
-                            <p>Учись лучше других и зарабатывай на этом.</p>
+                            <h3>{t("workStep3Title")}</h3>
+                            <p>{t("workStep3Description")}</p>
                         </div>
                     </div>
                     <div data-step="5" className="work-step__box">
@@ -67,8 +70,8 @@ const WorkStep = () => {
                             <img src={dealIcon} alt=""/>
                         </div>
                         <div className="work-step__text">
-                            <h3>100% практики</h3>
-                            <p>Максимум проектного обучения и минимум теории.</p>
+                            <h3>{t("workStep5Title")}</h3>
+                            <p>{t("workStep5Description")}</p>
                         </div>
                     </div>
                     <div data-step="7" className="work-step__box ">
@@ -76,8 +79,8 @@ const WorkStep = () => {
                             <img src={studentsIcon} alt=""/>
                         </div>
                         <div className="work-step__text">
-                            <h3>Результат</h3>
-                            <p>Наши выпускники - это специалисты с практическим опытом и портфолио, готовые сразу приступить к работе</p>
+                            <h3>{t("workStep7Title")}</h3>
+                            <p>{t("workStep7Description")}</p>
                         </div>
                     </div>
                 </div>
@@ -87,8 +90,8 @@ const WorkStep = () => {
                             <img src={bagCoinIcon} alt=""/>
                         </div>
                         <div className="work-step__text">
-                            <h3>Депозитная система</h3>
-                            <p>Если сдашь все экзамены успешно, вернешь 100% депозита.</p>
+                            <h3>{t("workStep2Title")}</h3>
+                            <p>{t("workStep2Description")}</p>
                         </div>
                     </div>
                     <div data-step="4" className="work-step__box ">
@@ -96,8 +99,8 @@ const WorkStep = () => {
                             <img src={chatLockIcon} alt=""/>
                         </div>
                         <div className="work-step__text">
-                            <h3>P2P Community</h3>
-                            <p>Попадешь в закрытые чаты, где ты сможешь обмениваться опытом и знаниями.</p>
+                            <h3>{t("workStep4Title")}</h3>
+                            <p>{t("workStep4Description")}</p>
                         </div>
                     </div>
                     <div data-step="6" className="work-step__box ">
@@ -105,8 +108,8 @@ const WorkStep = () => {
                             <img src={rankIcon} alt=""/>
                         </div>
                         <div className="work-step__text">
-                            <h3>Tasker</h3>
-                            <p>Сделай лучшее решение за денежное вознаграждение.</p>
+                            <h3>{t("workStep6Title")}</h3>
+                            <p>{t("workStep6Description")}</p>
                         </div>
                     </div>
                 </div>

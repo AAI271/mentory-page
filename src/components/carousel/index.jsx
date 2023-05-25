@@ -3,73 +3,76 @@ import "./index.css"
 import {Link} from "react-router-dom";
 import LeftIcon from "../../assets/leftArrow.svg"
 import RightIcon from "../../assets/rightArrow.svg"
+import {useTranslation} from "react-i18next";
 
 
 function Carousel() {
+    const { t } = useTranslation();
+
     const steps = [
         {
             vacancy:{
-                title: 'Data analyst',
+                title: t("dataAnalystDeveloperJobTitle"),
                 subtitle:'Aventus Group',
-                description: 'Сейчас мы в поиске Data analyst. Присоединяйтесь к Aventus Group и становитесь важной частью большого объединения профессионалов, создающих Fintech историю по всему миру!',
-                info:['Полная занятость, полный день','от 400 000 до 650 000 KZT на руки'],
+                description: t("dataAnalystJobDescription"),
+                info:[t("dataAnalystJobFullTime"),t("dataAnalystJobSalary")],
                 stackList:['Power BI','SQL']
             },
             lesson:{
                 name:'Data_Analysis',
-                title: 'Data Analysis (Excel, Power BI, SQL Basics)',
+                title: t("dataAnalystDeveloperLessonTitle"),
                 duration_time:'2 месяца',
                 subtitle:'KazApple Ltd. ',
-                description: 'По окончании курса участники будут готовы к созданию отчетов и анализу данных в Excel и Power BI, а также к работе с базами данных, используя SQL. Курс подходит для всех, кто хочет начать свою карьеру в сфере анализа данных.',
+                description: t("dataAnalystDeveloperLessonDescription"),
                 stackList:['Excel','Power BI','SQL Basics'],
             }
         },
         {
             vacancy:{
-                title: 'Web developer',
+                title: t("c#DeveloperJobTitle"),
                 subtitle:'Aspose',
-                description: 'We\'re hiring a web developer for imaging applications.',
-                info:['Полная занятость, удаленная работа','от 2 500 USD до вычета налогов'],
+                description: t("c#DeveloperJobDescription"),
+                info:[t("c#DeveloperJobFullTime"),t("c#DeveloperJobSalary")],
                 stackList:['C#','Angular','JavaScript','HTML5','CSS3','OOP','English','ASP.NET','Core','SEO']
             },
             lesson:{
                 name:"C#",
-                title: 'C# - Интенсивный курс для начинающих, с использованием .NET',
+                title: t("c#DeveloperLessonTitle"),
                 duration_time:'2 месяца',
-                description: 'C# разработчик. Интенсивный курс для начинающих, с использованием .NET" - это 8-недельный онлайн курс, который поможет участникам освоить основы программирования на языке C# и популярных технологий .NET. ',
+                description: t("c#DeveloperLessonDescription"),
                 stackList:['C#','.NET','OOP'],
             }
 
         },
         {
             vacancy:{
-                title: 'Веб-разработчик',
+                title: t("frontDeveloperJobTitle"),
                 subtitle:'ТОО ОТИС',
-                description: 'Ищем разработчика, который будет отвечать за создание и оптимизацию функционала на Laravel (версия 6 и выше), Vue.js (версия 2 и выше) ',
-                info:['Полная занятость, полный день','от 300 000 до 400 000 KZT до вычета налогов'],
+                description:t("frontDeveloperJobDescription"),
+                info:[t("frontDeveloperJobFullTime"),t("frontDeveloperJobSalary")],
                 stackList:['Laravel','Vue.js','Bootsrtap','MySQL','PostgreSQL','MS SQL']
             },
             lesson:{
                 name:"Frontend",
-                title: 'Frontend разработка на JavaScript - Базовый курс для новичков',
-                description: 'Базовый курс для новичков" - 8-недельный онлайн курс, который поможет участникам изучить основы веб-разработки, включая HTML, CSS и JavaScript, а также продвинутые технологии, такие как Flexbox, Grid, React и Redux.',
+                title: t("frontDeveloperLessonTitle"),
+                description: t("frontDeveloperLessonDescription"),
                 stackList:['HTML','CSS','Javascript','React','Redux'],
             }
 
         },
         {
             vacancy:{
-                title: 'QA Engineer (middle)',
+                title: t("qaEngineerJobTitle"),
                 subtitle:'ТОО BirdsBuild (БёрдсБилд)',
-                description: 'Мы приглашаем в команду Middle Q/A Engineer для работы в международной компании BirdsBuild.',
-                info:['Полная занятость, гибкий график','от 500 000 KZT до вычета налогов'],
+                description: t("qaEngineerJobDescription"),
+                info:[t("qaEngineerJobFullTime"),t("qaEngineerJobSalary")],
                 stackList:['Postman','Charles','Altair','Jira + confluence','Swager','Git']
             },
             lesson:{
                 name:"QA_Engineering",
-                title: 'QA Engineering-Базовый курс для новичков',
+                title: t("qaDeveloperLessonTitle"),
                 duration_time:'2 месяца',
-                description: 'QA tester. Интенсивный курс для начинающих, с использованием QA Engineering" - это 8-недельный онлайн курс, который поможет участникам освоить основы тестирования приложений и других платформ.',
+                description: t("qaDeveloperLessonDescription"),
                 stackList:[],
             }
         }
@@ -83,7 +86,7 @@ function Carousel() {
 
     return (
         <div>
-            <h3 className="carousel__title">Обучение для получения работы</h3>
+            <h3 className="carousel__title">{t("carouselTitle")}</h3>
             <div className="wrap">
                 <div className="viewbox">
                     <div className="steps" style={{ left: -activeStep * 100 + '%' }}>
@@ -91,7 +94,7 @@ function Carousel() {
                             <div key={index} className={`step`}>
                                 <div className="box">
                                     <h3>
-                                        Вакансия
+                                        {t("carouselVacancies")}
                                     </h3>
                                     <div className="box__content">
                                         <div className="box__title">
@@ -119,7 +122,7 @@ function Carousel() {
                                 </div>
                                 <div className="box box-lesson">
                                     <h3>
-                                        Обучение
+                                        {t("carouselTraining")}
                                     </h3>
                                     <div className="box__content">
                                         <div className="box__title">
@@ -137,7 +140,7 @@ function Carousel() {
                                         </div>
                                         <div className="box__btn">
                                             <Link to={`${step.lesson.name==="C#"?"C_Sharp":step.lesson.name}`}>
-                                                <button className="my-btn" type="submit">Подробнее</button>
+                                                <button className="my-btn" onClick={()=>{window.scrollTo({top:0})}}>Подробнее</button>
                                             </Link>
                                         </div>
                                     </div>

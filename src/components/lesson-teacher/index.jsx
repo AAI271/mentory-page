@@ -1,11 +1,13 @@
 import React from 'react';
 import "./index.css"
 import Linkedin from "../../assets/linkedin.svg"
+import {useTranslation} from "react-i18next";
 
 const LessonTeacher = ({lessonTeacher}) => {
+    const {t} = useTranslation()
     return (
         <div className="lesson-teacher">
-            <h3 className="lesson-teacher__title">Наш преподаватель:</h3>
+            <h3 className="lesson-teacher__title">{t("teacher")}</h3>
             <div className="lesson-teacher__content main-box">
                 <div className="lesson-teacher__img">
                     <img width="250"  src={lessonTeacher.image} alt=""/>
@@ -40,7 +42,7 @@ const LessonTeacher = ({lessonTeacher}) => {
                             </div>
                         )}
                     </div>
-                    <p>Навыки:</p>
+                    <p>{t("skills")}</p>
                     <div className="lesson-teacher__skills">
                         <div className="lesson-teacher__skills-list">
                             {lessonTeacher.skills.map((item,index)=>(

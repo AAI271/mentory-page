@@ -11,43 +11,43 @@ import QA from "../../assets/teachers/Arystan.jpg"
 import ManImg from "../../assets/Businessman in glasses thinking about statistics.png"
 import WomanImg from "../../assets/young woman working at the table.png"
 import WomenImg from "../../assets/young women sitting with laptop on the table.png"
+import {useTranslation} from "react-i18next";
 
 const Lesson = () => {
+    const {t} = useTranslation()
 
-    window.scrollTo({top:0})
 
     const backInfo = [
         {
             lesson_about: {
-                text: "Data Analysis (Excel, Power BI, SQL Basics)",
+                text: t("dataAnalystDeveloperLessonTitle"),
                 stackList: ["Excel", "Power BI", "SQL"]
             },
             lesson_info: {
-                text: ["Этот онлайн курс продлится 2 месяца и рассчитан на всех, кто хочет освоить навыки анализа данных, используя Excel, Power BI и SQL. В рамках этого курса участники получат знания и практические навыки по работе с функциями в Excel, такими как Lookup/Reference функции, статистические функции, форматирование на основе формул, функции дат и времени, а также работу с текстовыми функциями и веб-скрапингом. Кроме того, участники будут изучать основы Power BI, такие как введение в редактор запросов, типы соединителей данных, инструменты для работы с текстом, числами и датами, а также создание иерархий и категорий, создание интерактивных отчетов и язык DAX.",
-                    " В курсе также представлены основы работы с SQL, а именно, создание таблиц, управление данными. По окончании курса участники будут готовы к созданию отчетов и анализу данных в Excel и Power BI, а также к работе с базами данных, используя SQL. Курс подходит для всех, кто хочет начать свою карьеру в сфере анализа данных.",]
+                text: [t("dataAnalystInfo1"), t("dataAnalystInfo2"),]
             },
             lesson_for: {
                 list_info: [
                     {
-                        title: "Вы чувствуете перспективность IT-сферы, но не знаете, с чего начать?",
-                        text: "Курс подходит для вас, если вы хотите начать карьеру в сфере анализа данных."
+                        title: t("dataAnalystFor1Title"),
+                        text: t("dataAnalystFor1Text")
                     },
                     {
-                        title: "Вы работаете в смежной области и хотите расширить свой набор навыков?",
-                        text: "Курс поможет вам освоить навыки анализа данных, используя Excel, Power BI и SQL."
+                        title: t("dataAnalystFor2Title"),
+                        text: t("dataAnalystFor2Text")
                     },
                     {
-                        title: "У вас есть техническое образование, но вы не знакомы с Excel, Power BI и SQL?",
-                        text: "Курс позволит вам освоить основы работы с этими инструментами и начать работу в сфере анализа данных."
+                        title: t("dataAnalystFor3Title"),
+                        text: t("dataAnalystFor3Text")
                     },
                 ],
             },
             lesson_teacher: {
                 image:data_analysis,
-                name: "Элина Амурлаева",
-                description:"Опытный аналитик данных",
-                experience: "RPA Developer в международной компании EY",
-                graduated:"Astana IT University",
+                name: t("dataAnalystTeacherName"),
+                description: t("dataAnalystTeacherDescription"),
+                experience: t("dataAnalystTeacherExperience"),
+                graduated:t("dataAnalystTeacherGraduated"),
                 skills:['Pandas', 'NumPy', 'Scikit Learn', 'TensorFlow' ,'PostgreSQL'],
                 linkedIN:"https://www.linkedin.com/in/elina-amurlayeva-26726224b/"
             },
@@ -55,91 +55,93 @@ const Lesson = () => {
                 name:"Data Analysis",
                 plan_list:[
                     {
-                        title:'Продвинутый Excel',
-                        text:[
-                            'Lookup/Reference функции',
-                            'Статистические функции',
-                            'Фориматтинг на основе формул',
-                            'Функции дат и времени'
+                        title: t("dataAnalystPlan1Title"),
+                        text: [
+                            t("dataAnalystPlan1Text1"),
+                            t("dataAnalystPlan1Text2"),
+                            t("dataAnalystPlan1Text3"),
+                            t("dataAnalystPlan1Text4"),
                         ]
                     },
                     {
-                        title:'Продвинутый Excel',
-                        text:[
-                            'Логические операторы',
-                            'Формулы динамических массивов',
-                            'Текстовые функции',
-                            'Веб-скрапинг с WEBSERVICE & FILTERXML'
+                        title: t("dataAnalystPlan2Title"),
+                        text: [
+                            t("dataAnalystPlan2Text1"),
+                            t("dataAnalystPlan2Text2"),
+                            t("dataAnalystPlan2Text3"),
+                            t("dataAnalystPlan2Text4"),
                         ]
                     },
                     {
-                        title:'Power BI: Подключение и преобразовывание сырых данных',
-                        text:[
-                            'Введение в редактор запросов Power BI',
-                            'Типы соединителей данных Power BI',
-                            'Основные преобразования таблиц',
-                            'Инструменты для работы с текстом, числами и датами',
-                            'Индексные и условные столбцы',
-                            'Группировка и агрегирование данных',
-                            'Пивоты',
-                            'Изменение, объединение и добавление запросов',
-                            'Подключение к папкам',
-                            'Определение иерархий и категорий',
+                        title: t("dataAnalystPlan3Title"),
+                        text: [
+                            t("dataAnalystPlan3Text1"),
+                            t("dataAnalystPlan3Text2"),
+                            t("dataAnalystPlan3Text3"),
+                            t("dataAnalystPlan3Text4"),
+                            t("dataAnalystPlan3Text5"),
+                            t("dataAnalystPlan3Text6"),
+                            t("dataAnalystPlan3Text7"),
+                            t("dataAnalystPlan3Text8"),
+                            t("dataAnalystPlan3Text9"),
+                            t("dataAnalystPlan3Text10"),
                         ]
                     },
                     {
-                        title:'Power BI:  Создание реляционных моделей данных',
-                        text:[
-                            'Введение в нормализацию базы данных',
-                            'Создание связей между таблицами Power BI',
-                            'Схемы «Stra» и «Snowflake»',
-                            'Активные и неактивные связи',
-                            'Фильтрация и перекрестная фильтрация',
-                            'Скрытие полей в представлении отчета Power BI',
-                            'Рекомендации по моделированию данных и Power BI'
+                        title: t("dataAnalystPlan4Title"),
+                        text: [
+                            t("dataAnalystPlan4Text1"),
+                            t("dataAnalystPlan4Text2"),
+                            t("dataAnalystPlan4Text3"),
+                            t("dataAnalystPlan4Text4"),
+                            t("dataAnalystPlan4Text5"),
+                            t("dataAnalystPlan4Text6"),
+                            t("dataAnalystPlan4Text7"),
+                            t("dataAnalystPlan4Text8"),
+                            t("dataAnalystPlan4Text9"),
+                            t("dataAnalystPlan4Text10"),
                         ]
                     },
                     {
-                        title:'Power BI: DAX',
-                        text:[
-                            'Введение в выражения анализа данных (DAX)',
-                            'Вычисляемые столбцы и меры',
-                            'Синтаксис и операторы DAX',
-                            'Общие функции Power BI',
-                            'Основные формулы даты и времени',
-                            'Логические и условные операторы',
-                            'Текстовые, математические и статистические функции',
-                            'Объединение данных с RELATED',
-                            'Функции CALCULATE, ALL & FILTER',
-                            'Итераторы DAX (SUMX, AVERAGEX)',
+                        title: t("dataAnalystPlan5Title"),
+                        text: [
+                            t("dataAnalystPlan5Text1"),
+                            t("dataAnalystPlan5Text2"),
+                            t("dataAnalystPlan5Text3"),
+                            t("dataAnalystPlan5Text4"),
+                            t("dataAnalystPlan5Text5"),
+                            t("dataAnalystPlan5Text6"),
+                            t("dataAnalystPlan5Text7"),
+                            t("dataAnalystPlan5Text8"),
+                            t("dataAnalystPlan5Text9"),
                         ]
                     },
                     {
-                        title:'Power BI: Разработка интерактивных отчетов Power BI',
-                        text:[
-                            'Введение в представление отчетов Power BI',
-                            'Добавление базовых диаграмм в отчеты Power BI',
-                            'Параметры форматирования и фильтрации',
-                            'Матрицы',
-                            'Слайсеры и таймлайны',
-                            'Карточки и KPI',
-                            'Добавление фильтров Drillthrough',
-                            'Использование закладок',
-                            'Публикация в облако Power BI'
+                        title: t("dataAnalystPlan6Title"),
+                        text: [
+                            t("dataAnalystPlan6Text1"),
+                            t("dataAnalystPlan6Text2"),
+                            t("dataAnalystPlan6Text3"),
+                            t("dataAnalystPlan6Text4"),
+                            t("dataAnalystPlan6Text5"),
+                            t("dataAnalystPlan6Text6"),
+                            t("dataAnalystPlan6Text7"),
+                            t("dataAnalystPlan6Text8"),
+                            t("dataAnalystPlan6Text9"),
                         ]
                     },
                     {
-                        title:'SQL Basics',
-                        text:[
-                            'Установка pgAdmin и PostgreSQL',
-                            'Создание таблицы',
-                            'Добавиление данных в таблицу',
-                            'Операторы Select PostgreSQL',
-                            'Оператор «Where» в PostgreSQL',
-                            'Wildcards PostgreSQL',
-                            'PostgreSQL AND, OR, NOT',
-                            'PostgreSQL ORDER BY',
-                            'PostgreSQL INSERT INTO',
+                        title: t("dataAnalystPlan7Title"),
+                        text: [
+                            t("dataAnalystPlan7Text1"),
+                            t("dataAnalystPlan7Text2"),
+                            t("dataAnalystPlan7Text3"),
+                            t("dataAnalystPlan7Text4"),
+                            t("dataAnalystPlan7Text5"),
+                            t("dataAnalystPlan7Text6"),
+                            t("dataAnalystPlan7Text7"),
+                            t("dataAnalystPlan7Text8"),
+                            t("dataAnalystPlan7Text9"),
                         ]
                     },
                     {
@@ -161,127 +163,127 @@ const Lesson = () => {
         },
         {
             lesson_about: {
-                text: "Frontend разработка на JavaScript - Базовый курс для новичков",
+                text: t("frontDeveloperLessonTitle"),
                 stackList: ["HTML", "CSS", "JavaScript", "Flexbox", "Grid", "React", "Redux"]
             },
             lesson_info: {
-                text: ["Этот 8-недельный онлайн курс предназначен для тех, кто хочет изучить основы веб-разработки, включая HTML, CSS и JavaScript, а также продвинутые технологии, такие как Flexbox, Grid, React и Redux. В рамках курса участники изучат основы создания веб-страниц, адаптивных макетов, управления состоянием приложения и создания SPA (Single Page Application). Курс идеально подходит для новичков, которые хотят начать карьеру в веб-разработке."],
+                text: [t("frontInfo1")],
             },
             lesson_for: {
                 list_info: [
                     {
-                        title: "Вы только начинаете свой путь в веб-разработке?",
-                        text: "Курс идеально подходит для новичков, которые хотят начать карьеру в веб-разработке."
+                        title: t("frontFor1Title"),
+                        text: t("frontFor1Text")
                     },
                     {
-                        title: "Хотите изучить основы веб-разработки, включая HTML, CSS и JavaScript?",
-                        text: "Этот курс поможет вам изучить основы веб-разработки и более продвинутые технологии, такие как Flexbox, Grid, React и Redux."
+                        title: t("frontFor2Title"),
+                        text: t("frontFor2Text")
                     },
                     {
-                        title: "Вы хотите создавать адаптивные макеты и SPA (Single Page Application)?",
-                        text: "После прохождения курса, вы будете готовы создавать адаптивные макеты и SPA (Single Page Application)."
+                        title: t("frontFor3Title"),
+                        text: t("frontFor3Text")
                     }
                 ],
             },
             lesson_teacher: {
                 image:javascript,
-                name: "Арман Аскар",
-                description: "Опытный Frontend разработчик",
-                experience: "Frontend Teamlead в RBK Bank",
+                name: t("frontTeacherName"),
+                description: t("frontTeacherDescription"),
+                experience: t("frontTeacherExperience"),
                 graduated:"",
                 skills:['CSS','JavaScript','React','Redux','HTML5','Typescript','Next.js','Docker','Linux','CI/CD'],
                 linkedIN:"https://www.linkedin.com/in/askarjkee/"
             },
             lesson_plan:{
                 name:"Frontend",
-                plan_list:[
+                plan_list: [
                     {
-                        title:'Введение в HTML и CSS',
-                        text:[
-                            'Введение в веб-разработку и фронтенд',
-                            'Основы HTML: теги, атрибуты и структура документа',
-                            'Основы CSS: селекторы, свойства и стилизация элементов',
-                            'Создание простой веб-страницы с использованием HTML и CSS'
+                        title: t("frontendPlan1Title"),
+                        text: [
+                            t("frontendPlan1Text1"),
+                            t("frontendPlan1Text2"),
+                            t("frontendPlan1Text3"),
+                            t("frontendPlan1Text4"),
                         ]
                     },
                     {
-                        title:'Продвинутые возможности CSS',
-                        text:[
-                            'Работа с позиционированием элементов',
-                            'Использование flexbox и grid для создания адаптивных макетов',
-                            'Работа с анимациями и переходами',
-                            'Создание респонсивных веб-страниц с использованием медиа-запросов'
+                        title: t("frontendPlan2Title"),
+                        text: [
+                            t("frontendPlan2Text1"),
+                            t("frontendPlan2Text2"),
+                            t("frontendPlan2Text3"),
+                            t("frontendPlan2Text4"),
                         ]
                     },
                     {
-                        title:'JavaScript: Основы',
-                        text:[
-                            'Введение в язык программирования JavaScript',
-                            'Синтаксис и типы данных',
-                            'Переменные, условные операторы, циклы',
-                            'Функции и объекты'
+                        title: t("frontendPlan3Title"),
+                        text: [
+                            t("frontendPlan3Text1"),
+                            t("frontendPlan3Text2"),
+                            t("frontendPlan3Text3"),
+                            t("frontendPlan3Text4"),
                         ]
                     },
                     {
-                        title:'Продвинутые возможности JavaScript',
-                        text:[
-                            'Работа с событиями и обработчиками событий',
-                            'Работа с DOM и изменение элементов на странице',
-                            'Работа с AJAX и получение данных с сервера',
-                            'Работа с библиотеками и фреймворками JavaScript, такими как jQuery'
+                        title: t("frontendPlan4Title"),
+                        text: [
+                            t("frontendPlan4Text1"),
+                            t("frontendPlan4Text2"),
+                            t("frontendPlan4Text3"),
+                            t("frontendPlan4Text4"),
                         ]
                     },
                     {
-                        title:'React: Основы (По возможности)',
-                        text:[
-                            'Введение в React и его философию',
-                            'Создание компонентов и их использование',
-                            'Использование JSX и работа с props',
-                            'Работа со стейтом и обработка событий'
+                        title: t("frontendPlan5Title"),
+                        text: [
+                            t("frontendPlan5Text1"),
+                            t("frontendPlan5Text2"),
+                            t("frontendPlan5Text3"),
+                            t("frontendPlan5Text4"),
                         ]
                     },
                     {
-                        title:'Продвинутые возможности React',
-                        text:[
-                            'Работа с жизненным циклом компонентов',
-                            'Работа с формами и валидация ввода',
-                            'Работа с роутингом и создание SPA',
-                            'Использование Redux и управление состоянием приложения'
+                        title: t("frontendPlan6Title"),
+                        text: [
+                            t("frontendPlan6Text1"),
+                            t("frontendPlan6Text2"),
+                            t("frontendPlan6Text3"),
+                            t("frontendPlan6Text4"),
                         ]
                     },
                 ]
+
             },
         },
         {
             lesson_about: {
-                text: "C# разработчик. Интенсивный курс для начинающих, с использованием .NET",
+                text: t("c#DeveloperLessonTitle"),
                 stackList: ["C#", ".NET"]
             },
             lesson_info: {
-                text:[ "Этот 8-недельный онлайн курс поможет участникам освоить основы программирования на языке C# и популярных технологий .NET. Участники изучат основные концепции программирования, объектно-ориентированное программирование (OOP), консольное и графическое приложения, а также базовые структуры данных.",
-                    " По окончании курса участники будут готовы создавать простые программы на C# и продолжать свое обучение в сфере программирования. Курс подходит для всех, кто хочет начать свою карьеру в сфере разработки на C#."]
+                text:[ t("c#Info1"),t("c#Info2")]
             },
             lesson_for: {
                 list_info: [
                     {
-                        title: "Вы хотите начать карьеру в сфере разработки на C#?",
-                        text: "Курс подходит для вас, если вы хотите начать свою карьеру в сфере разработки на C#."
+                        title: t("c#For1Title"),
+                        text: t("c#For1Text")
                     },
                     {
-                        title: "Вы уже имеете небольшой опыт программирования, но не работали с C#?",
-                        text: "Курс поможет вам освоить основы программирования на языке C# и популярных технологий .NET."
+                        title: t("c#For2Title"),
+                        text: t("c#For2Text")
                     },
                     {
-                        title: "Вы хотите обновить свои знания и изучить новый язык программирования?",
-                        text: "Курс поможет вам изучить основы программирования на языке C# и популярных технологий .NET."
+                        title: t("c#For3Title"),
+                        text: t("c#For3Text")
                     },
                 ],
             },
             lesson_teacher: {
                 image:Csharp,
-                name: "Заит Олжас",
-                description: "Senior C# developer",
-                experience: "Software developer в Akvelon, Inc.",
+                name: t("c#TeacherName"),
+                description: t("c#TeacherDescription"),
+                experience: t("c#TeacherExperience"),
                 graduated:"",
                 skills: ['C#','JavaScript','TypeScript','HTML','CSS','MS SQL','MS Visual Studio','.NET Framework','MS Dynamics CRM','React','ASP .Net MVC'],
                 linkedIN:"https://www.linkedin.com/in/zait-olzhas/"
@@ -290,157 +292,162 @@ const Lesson = () => {
                 name:"C#",
                 plan_list:[
                     {
-                        title:'Introduction to Programming Concepts and UML',
-                        text:[
-                            'Introduction to programming and its applications',
-                            'Overview of programming languages',
-                            'Basic programming concepts: data types, variables, operators, and expressions',
-                            'Basic control structures: if-else, loops, and functions',
-                            'Introduction to UML (Unified Modeling Language)',
-                            'UML diagrams: use case, class, sequence, and activity diagrams',
-                            'Creating block schemes'
+                        title: t("c#Plan1Title"),
+                        text: [
+                            t("c#Plan1Text1"),
+                            t("c#Plan1Text2"),
+                            t("c#Plan1Text3"),
+                            t("c#Plan1Text4"),
+                            t("c#Plan1Text5"),
+                            t("c#Plan1Text6"),
+                            t("c#Plan1Text7")
                         ]
                     },
                     {
-                        title:'Object-Oriented Programming with C#',
-                        text:[
-                            'Introduction to object-oriented programming (OOP)',
-                            'Data types, Enums',
-                            'Classes, objects, and methods in C#',
-                            'Inheritance, encapsulation and polymorphism in C#',
-                            'Exception handling in C#',
-                            'Basic data structures: arrays and lists in C#'
+                        title: t("c#Plan2Title"),
+                        text: [
+                            t("c#Plan2Text1"),
+                            t("c#Plan2Text2"),
+                            t("c#Plan2Text3"),
+                            t("c#Plan2Text4"),
+                            t("c#Plan2Text5"),
+                            t("c#Plan2Text6"),
+                            t("c#Plan2Text7")
                         ]
                     },
                     {
-                        title:'Console Application Development with C# and .NET',
-                        text:[
-                            'Introduction to console application development with C# and .NET',
-                            'Command line arguments',
-                            'File input and output',
-                            'Working with strings and text files',
-                            'Basic debugging techniques'
+                        title: t("c#Plan3Title"),
+                        text: [
+                            t("c#Plan3Text1"),
+                            t("c#Plan3Text2"),
+                            t("c#Plan3Text3"),
+                            t("c#Plan3Text4"),
+                            t("c#Plan3Text5"),
+                            t("c#Plan3Text6"),
+                            t("c#Plan3Text7")
                         ]
                     },
                     {
-                        title:'Desktop Application Development with C# and .NET',
-                        text:[
-                            'Introduction to desktop application development with C# and .NET',
-                            'Windows Forms basics',
-                            'Event-driven programming',
-                            'Creating user interfaces and controls in a console app',
-                            'Basic debugging techniques'
+                        title: t("c#Plan4Title"),
+                        text: [
+                            t("c#Plan4Text1"),
+                            t("c#Plan4Text2"),
+                            t("c#Plan4Text3"),
+                            t("c#Plan4Text4"),
+                            t("c#Plan4Text5"),
+                            t("c#Plan4Text6"),
+                            t("c#Plan4Text7")
                         ]
-                    },
+                    }
                 ]
             },
         },
         {
             lesson_about: {
-                text: "QA Engineering - Базовый курс для новичков",
+                text: t("qaDeveloperLessonTitle"),
                 stackList: ["QA Testing", "Bug tracking", "Version control"]
             },
             lesson_info: {
-                text: ["Это 8-недельный онлайн курс, который поможет участникам освоить основы тестирования приложений и других платформ. В ходе курса участники научатся планировать и проводить тестирование программного обеспечения в различных средах, анализировать результаты тестирования и представлять отчеты о проделанной работе, разрабатывать и использовать автоматизированные тесты для повышения эффективности тестирования, использовать инструменты управления баг-трекингом и контроля версий, а также работать в команде разработчиков и QA-специалистов, обеспечивая высокое качество продукта."],
+                text: [t("qaInfo1")],
             },
             lesson_for: {
                 list_info: [
                     {
-                        title: "Вы только начинаете свой путь в IT-сфере?",
-                        text: "Курс будет полезен начинающим специалистам, которые хотят получить свою первую работу в сфере IT."
+                        title: t("qaFor1Title"),
+                        text: t("qaFor1Text")
                     },
                     {
-                        title: "Вы хотите получить навыки тестирования приложений и других платформ?",
-                        text: "Курс поможет участникам освоить основы тестирования приложений и других платформ."
+                        title: t("qaFor2Title"),
+                        text: t("qaFor2Text")
                     },
                     {
-                        title: "Вы хотите узнать о инструментах управления баг-трекингом и контроля версий?",
-                        text: "Курс покажет участникам, как использовать инструменты управления баг-трекингом и контроля версий."
+                        title: t("qaFor3Title"),
+                        text: t("qaFor3Text")
                     },
                 ],
             },
             lesson_teacher: {
                 image:QA,
-                name: "Арыстан Сабир",
-                description: "Мотивированный и опытный специалист",
-                experience: "QA Tester at Typi LLC",
+                name: t("qaTeacherName"),
+                description: t("qaTeacherDescription"),
+                experience: t("qaTeacherExperience"),
                 graduated:"",
                 skills:['Gitlab','GitHub','QA Testing','Python','Robotics','QA Assessment'],
                 linkedIN:""
             },
             lesson_plan:{
                 name:"QA Engineering",
-                plan_list:[
+                plan_list: [
                     {
-                        title:'Introduction to Quality Assurance',
-                        text:[
-                            'What is QA and its importance in software development?',
-                            'The role of QA in the software development lifecycle',
-                            'Overview of testing types (unit, integration, system, acceptance)'
+                        title: t("qaPlan1Title"),
+                        text: [
+                            t("qaPlan1Text1"),
+                            t("qaPlan1Text2"),
+                            t("qaPlan1Text3")
                         ]
                     },
                     {
-                        title:'Software Testing Fundamentals',
-                        text:[
-                            'Principles of software testing',
-                            'Black box testing and white box testing',
-                            'Functional and non-functional testing'
+                        title: t("qaPlan2Title"),
+                        text: [
+                            t("qaPlan2Text1"),
+                            t("qaPlan2Text2"),
+                            t("qaPlan2Text3")
                         ]
                     },
                     {
-                        title:'Test Planning and Test Case Design',
-                        text:[
-                            'Developing test plans and strategies',
-                            'Test case design techniques',
-                            'Creating effective test cases'
+                        title: t("qaPlan3Title"),
+                        text: [
+                            t("qaPlan3Text1"),
+                            t("qaPlan3Text2"),
+                            t("qaPlan3Text3")
                         ]
                     },
                     {
-                        title:'Test Execution and Reporting',
-                        text:[
-                            'Test execution and defect reporting',
-                            'Defect management and tracking',
-                            'Test coverage and metrics'
+                        title: t("qaPlan4Title"),
+                        text: [
+                            t("qaPlan4Text1"),
+                            t("qaPlan4Text2"),
+                            t("qaPlan4Text3")
                         ]
                     },
                     {
-                        title:'Automation Testing Fundamentals',
-                        text:[
-                            'Introduction to automation testing',
-                            'Automation testing frameworks',
-                            'Selecting and evaluating automation tools'
+                        title: t("qaPlan5Title"),
+                        text: [
+                            t("qaPlan5Text1"),
+                            t("qaPlan5Text2"),
+                            t("qaPlan5Text3")
                         ]
                     },
                     {
-                        title:'Test Automation with Selenium',
-                        text:[
-                            'Introduction to Selenium',
-                            'Setting up the Selenium environment',
-                            'Building and executing automated tests with Selenium WebDriver'
+                        title: t("qaPlan6Title"),
+                        text: [
+                            t("qaPlan6Text1"),
+                            t("qaPlan6Text2"),
+                            t("qaPlan6Text3")
                         ]
                     },
                     {
-                        title:'API Testing',
-                        text:[
-                            'Overview of API testing',
-                            'API testing tools',
-                            'Test automation with Postman'
+                        title: t("qaPlan7Title"),
+                        text: [
+                            t("qaPlan7Text1"),
+                            t("qaPlan7Text2"),
+                            t("qaPlan7Text3")
                         ]
                     },
                     {
-                        title:'Performance Testing',
-                        text:[
-                            'Introduction to performance testing',
-                            'Performance testing tools',
-                            'Load testing with JMeter'
+                        title: t("qaPlan8Title"),
+                        text: [
+                            t("qaPlan8Text1"),
+                            t("qaPlan8Text2"),
+                            t("qaPlan8Text3")
                         ]
                     },
                     {
-                        title:'Test Management and Quality Assurance',
-                        text:[
-                            'Test management and reporting tools',
-                            'Quality assurance and quality control',
-                            'Continuous integration and delivery in software testing'
+                        title: t("qaPlan9Title"),
+                        text: [
+                            t("qaPlan9Text1"),
+                            t("qaPlan9Text2"),
+                            t("qaPlan9Text3")
                         ]
                     }
                 ]

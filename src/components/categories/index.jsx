@@ -12,62 +12,64 @@ import CategoryImage9 from "../../assets/categories/chart histogram.svg"
 import CategoryImage10 from "../../assets/categories/pie.svg"
 import CategoryImage11 from "../../assets/categories/filming.svg"
 import CategoryImage12 from "../../assets/categories/focus.svg"
+import {useTranslation} from "react-i18next";
 
 
 const Categories = () => {
+    const { t } = useTranslation();
     const categories = [
         {
             image:CategoryImage1,
-            title:"Programming",
+            title:t("categories1"),
         },
         {
             image:CategoryImage2,
-            title:"Photo",
+            title:t("categories2"),
         },
         {
             image:CategoryImage3,
-            title:"Management",
+            title:t("categories3"),
         },
         {
             image:CategoryImage4,
-            title:"Design",
+            title:t("categories4"),
         },
         {
             image:CategoryImage5,
-            title:"Game Development",
+            title:t("categories5"),
         },
         {
             image:CategoryImage6,
-            title:"Movies & Music",
+            title:t("categories6"),
         },
         {
             image:CategoryImage7,
-            title:"Marketing",
+            title:t("categories7"),
         },
         {
             image:CategoryImage8,
-            title:"Finance",
+            title:t("categories8"),
         },
         {
             image:CategoryImage9,
-            title:"Analytics",
+            title:t("categories9"),
         },
         {
             image:CategoryImage10,
-            title:"Data Science",
+            title:t("categories10"),
         },
         {
             image:CategoryImage11,
-            title:"Filmmaking",
+            title:t("categories11"),
         },
         {
             image:CategoryImage12,
-            title:"Photoshop",
+            title:t("categories12"),
         }
     ]
     return (
         <div className="categories marginX">
-            <h3 className="categories__title">Categories</h3>
+            <h3 className="categories__title">{t("categoriesTitle")}</h3>
             <div className="categories__container">
                 {categories.map((category,index) => (
                     <div key={category.title} className={`categories__item ${(index/3)%2===0?"down":""}`}>

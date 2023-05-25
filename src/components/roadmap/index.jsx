@@ -1,7 +1,9 @@
 import React from 'react';
 import "./index.css"
+import {useTranslation} from "react-i18next";
 
 const Roadmap = () => {
+    const { t } = useTranslation();
     return (
         <div className="roadmap">
             <h3>Roadmap</h3>
@@ -11,7 +13,7 @@ const Roadmap = () => {
                         <div className="roadmap__circle-half right default"/>
                         <div className="roadmap__circle-half left green"/>
                         <div className="roadmap__inner-circle">
-                            Ты здесь
+                            {t("roadmapTitle1")}
                         </div>
                     </div>
                 </div>
@@ -25,7 +27,7 @@ const Roadmap = () => {
 
                             </div>
                         </div>
-                        <p>Доработка функции мобильного приложения</p>
+                        <p>{t("roadmapDescription1")}</p>
                     </div>
                     <div className="roadmap__circle-container">
                         <div className="roadmap__circle-half left default"/>
@@ -36,7 +38,7 @@ const Roadmap = () => {
                                 <h3>Exam 01</h3>
                             </div>
                             <div className="hidden-text">
-                                <p>Доработка функции мобильного приложения</p>
+                                <p>{t("roadmapDescription1")}</p>
                                 <h3>+50$</h3>
                             </div>
                         </div>
@@ -52,7 +54,7 @@ const Roadmap = () => {
                                 <h3>Exam 02</h3>
                             </div>
                             <div className="hidden-text">
-                                <p>Разработка модуля приложения - торговой системы</p>
+                                <p>{t("roadmapDescription2")}</p>
                                 <h3>+150$</h3>
                             </div>
                         </div>
@@ -66,7 +68,7 @@ const Roadmap = () => {
 
                             </div>
                         </div>
-                        <p>Разработка модуля приложения - торговой системы</p>
+                        <p>{t("roadmapDescription2")}</p>
                     </div>
                 </div>
                 <div className="roadmap__step left">
@@ -79,7 +81,7 @@ const Roadmap = () => {
 
                             </div>
                         </div>
-                        <p>Разработка модуля приложения - торговой системы</p>
+                        <p>{t("roadmapDescription3")}</p>
                     </div>
                     <div className="roadmap__circle-container">
                         <div className="roadmap__circle-half left default"/>
@@ -90,7 +92,7 @@ const Roadmap = () => {
                                 <h3>Exam</h3>
                             </div>
                             <div className="hidden-text">
-                                <p>Разработка модуля приложения - торговой системы</p>
+                                <p>{t("roadmapDescription3")}</p>
                                 <h3>+400$</h3>
                             </div>
                         </div>
