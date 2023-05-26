@@ -1,7 +1,9 @@
 import React from 'react';
 import "./index.css"
+import {useTranslation} from "react-i18next";
 
 const LessonPlan = ({lessonPlan}) => {
+    const {t} = useTranslation()
     return (
         <div className="lesson-plan">
             {lessonPlan.plan_list.map((item,index)=>(
@@ -9,7 +11,7 @@ const LessonPlan = ({lessonPlan}) => {
                     <div className="lesson-plan__item-container">
                         <div className="lesson-plan__item-week">
                             <h2>{`0${index+1}`}</h2>
-                            <h3>Неделя</h3>
+                            <h3>{t("week")}</h3>
                         </div>
                         <div className="lesson-plan__item-text">
                             <p><strong>{item.title}</strong></p>

@@ -10,7 +10,6 @@ import Footer from "./components/footer";
 import Lesson from "./pages/lesson";
 import "./assets/font/Sofia-sans.css"
 import "./i18n"
-import Language from "./components/language";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -22,7 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route path="/mentory-page" element={<Home/>}/>
               <Route path="/mentory-page/:lesson" element={<Lesson/>}/>
           </Routes>
-          <Language/>
           <Footer/>
       </BrowserRouter>
       </Suspense>
