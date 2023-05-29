@@ -92,7 +92,9 @@ function Carousel() {
     const handleTouchMove = (event) => {
         const currentX = event.touches[0].clientX;
         const diff = startX - currentX;
-        setSwipeDirection(diff > 0 ? -1 : 1);
+        if(Math.abs(diff)>40){
+            setSwipeDirection(diff > 0 ? -1 : 1);
+        }
     };
 
     const handleTouchEnd = () => {
