@@ -18,6 +18,12 @@ const AboutLesson = ( {aboutLesson}) => {
         lessonFormRef.current.appendChild(script);
         lessonFormRef.current.appendChild(amoFormsScript);
         return () => {
+            if (lessonFormRef.current) {
+                const formChildNodes = lessonFormRef.current.childNodes;
+                formChildNodes.forEach((childNode) => {
+                    lessonFormRef.current.removeChild(childNode);
+                });
+            }
         };
     }, []);
     return (

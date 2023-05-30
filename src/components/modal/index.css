@@ -52,8 +52,12 @@
     .modal__content{
         flex-direction: column;
         margin-bottom: 10vh;
-        height: auto;
+        height: 80vh;
         min-width: 250px;
+        padding: 10px 20px;
+    }
+    .modal__text{
+        padding: 0;
     }
     @keyframes animate {
         from {margin-bottom: 5vh}
