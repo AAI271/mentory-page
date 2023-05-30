@@ -26,7 +26,9 @@ const Modal = ({ setModal }) => {
             'https://forms.amocrm.ru/forms/assets/js/amoforms.js?1685444331';
 
         formRef.current.appendChild(script);
+        console.log(formRef.current)
         formRef.current.appendChild(amoFormsScript);
+        console.log(formRef.current)
         console.log('opened')
         return () => {
             if (formRef.current) {
