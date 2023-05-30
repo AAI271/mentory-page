@@ -16,6 +16,7 @@ const Modal = ({ setModal }) => {
 
     useEffect(() => {
         const script = document.createElement('script');
+        const scriptContainer = document.createElement('div');
         script.innerHTML = `!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1144762",hash:"4e12781ec5203a2daa244c3adb2c69eb",locale:"ru"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");`;
 
         const amoFormsScript = document.createElement('script');
@@ -24,21 +25,10 @@ const Modal = ({ setModal }) => {
         amoFormsScript.charset = 'utf-8';
         amoFormsScript.src =
             'https://forms.amocrm.ru/forms/assets/js/amoforms.js?1685444331';
-
-        formRef.current.appendChild(script);
-        console.log(formRef.current)
-        formRef.current.appendChild(amoFormsScript);
-        console.log(formRef.current)
-        console.log('opened')
+        scriptContainer.appendChild(script)
+        scriptContainer.appendChild(amoFormsScript)
+        formRef.current.appendChild(scriptContainer);
         return () => {
-            if (formRef.current) {
-                const formChildNodes = formRef.current.childNodes;
-                formChildNodes.forEach((childNode) => {
-                    formRef.current.removeChild(childNode);
-                });
-                console.log('was true')
-            }
-            console.log(formRef)
         };
     }, [setModal]);
 
