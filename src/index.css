@@ -46,7 +46,7 @@ h3{
 .my-btn{
     font-family: "Sofia Sans", serif;
     width: 100%;
-    background: linear-gradient(90deg, #31B3EB 0%, #8F64FF 100%);;
+    background: linear-gradient(90deg, #31B3EB 0%, #8F64FF 100%);
     border-radius: 30px;
     color: white;
     padding: 15px;
@@ -81,4 +81,32 @@ h3{
         padding:40px 0;
         height: 190px;
     }
+}
+#amoforms_iframe_1143654{
+    position: static !important;
+}
+.modal #amoforms_iframe_1143654{
+    z-index: 5001;
+}
+
+#amoforms_iframe_1144762,#amoforms_iframe_1144806{
+    position: static !important;
+}
+#amoforms_iframe_1144806{
+    height: 300px;
+    z-index: 1 !important;
+}
+#amoforms_iframe_1144806:nth-of-type(2) {
+    max-height: 0;
+}
+.amoforms-footer-copyright {
+    height: 0 !important;
+    font-size: 10px;
+    width: 100%;
+    /* position: absolute; */
+    overflow: hidden !important;
+    top: 6px;
+}
+#amoforms_form{
+    padding:0 !important;
 }
