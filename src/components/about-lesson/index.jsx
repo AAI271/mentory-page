@@ -6,6 +6,7 @@ const AboutLesson = ( {aboutLesson}) => {
 
     useEffect(() => {
         const script = document.createElement('script');
+        const scriptContainer = document.createElement('div');
         script.innerHTML = `!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1144806",hash:"15d2bdf2e7568ba10a2608d68d73ca50",locale:"ru"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");`;
 
         const amoFormsScript = document.createElement('script');
@@ -15,8 +16,9 @@ const AboutLesson = ( {aboutLesson}) => {
         amoFormsScript.src =
             'https://forms.amocrm.ru/forms/assets/js/amoforms.js?1685445060';
 
-        lessonFormRef.current.appendChild(script);
-        lessonFormRef.current.appendChild(amoFormsScript);
+        scriptContainer.appendChild(script)
+        scriptContainer.appendChild(amoFormsScript)
+        lessonFormRef.current.appendChild(scriptContainer);
         return () => {
             if (lessonFormRef.current) {
                 const formChildNodes = lessonFormRef.current.childNodes;
