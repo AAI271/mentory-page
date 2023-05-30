@@ -23,14 +23,6 @@ const Categories = () => {
             title:t("categories1"),
         },
         {
-            image:CategoryImage2,
-            title:t("categories2"),
-        },
-        {
-            image:CategoryImage3,
-            title:t("categories3"),
-        },
-        {
             image:CategoryImage4,
             title:t("categories4"),
         },
@@ -39,16 +31,8 @@ const Categories = () => {
             title:t("categories5"),
         },
         {
-            image:CategoryImage6,
-            title:t("categories6"),
-        },
-        {
             image:CategoryImage7,
             title:t("categories7"),
-        },
-        {
-            image:CategoryImage8,
-            title:t("categories8"),
         },
         {
             image:CategoryImage9,
@@ -58,14 +42,6 @@ const Categories = () => {
             image:CategoryImage10,
             title:t("categories10"),
         },
-        {
-            image:CategoryImage11,
-            title:t("categories11"),
-        },
-        {
-            image:CategoryImage12,
-            title:t("categories12"),
-        }
     ]
     return (
         <div className="categories marginX">
