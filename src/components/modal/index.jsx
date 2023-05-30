@@ -36,9 +36,9 @@ const Modal = ({ setModal }) => {
                 });
                 console.log('was true')
             }
-            console.log('closed')
+            console.log(formRef)
         };
-    }, []);
+    }, [setModal]);
 
 
     return (
