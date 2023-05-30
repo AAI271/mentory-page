@@ -27,14 +27,16 @@ const Modal = ({ setModal }) => {
 
         formRef.current.appendChild(script);
         formRef.current.appendChild(amoFormsScript);
-
+        console.log('opened')
         return () => {
             if (formRef.current) {
                 const formChildNodes = formRef.current.childNodes;
                 formChildNodes.forEach((childNode) => {
                     formRef.current.removeChild(childNode);
                 });
+                console.log('was true')
             }
+            console.log('closed')
         };
     }, []);
 
