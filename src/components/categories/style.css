@@ -44,25 +44,18 @@
     .categories__item{
         max-width: 25%;
     }
-    .categories__item.down, .categories__item.up{
-        margin: 10px;
-    }
     .categories__container{
-        height: 1000px;
+        height: 400px;
     }
-}
-@media only screen and (max-width: 750px) {
-    .categories__item.down, .categories__item.up{
-        margin: 10px 0;
-    }
-    .categories__container{
-        height: 900px;
-    }
+
     .categories__item{
-        max-height: 100px;
+        max-height: 120px;
         max-width: 40%;
         margin: 10px 0;
     }
+}
+@media only screen and (max-width: 750px) {
+
     .categories__item img{
         max-width: 80px;
         width: 100%;
