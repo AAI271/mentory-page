@@ -29,9 +29,9 @@ const Home = () => {
             {/*<section id="roadmap">*/}
             {/*    <StepProcess/>*/}
             {/*</section>*/}
-            <section id="order" className="marginX">
-                <Order/>
-            </section>
+            {/*<section id="order" className="marginX">*/}
+            {/*    <Order/>*/}
+            {/*</section>*/}
             <section id="partners" className="marginX">
                 <Partners/>
             </section>

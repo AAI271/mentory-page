@@ -455,8 +455,9 @@ const Lesson = () => {
         },
     ];
     const list = ["Data_Analysis","Frontend","C_Sharp","QA_Engineering"]
-    const path =window.location.pathname.split('/')
+    const path =window.location.hash.split('/')
     const lessonIndex = list.indexOf(path[path.length-1])
+    console.log(path,lessonIndex)
     const lessonInfo = backInfo[lessonIndex]
     return (
         <main className="marginX">

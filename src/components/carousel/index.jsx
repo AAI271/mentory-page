@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useRef, useState} from 'react';
 import "./index.css"
 import {Link} from "react-router-dom";
 import LeftIcon from "../../assets/leftArrow.svg"
@@ -8,7 +8,10 @@ import {useTranslation} from "react-i18next";
 
 function Carousel() {
     const { t } = useTranslation();
-
+    const carouselRef = useRef(null);
+    const [activeStep, setActiveStep] = useState(0);
+    const [swipeDirection, setSwipeDirection] = useState(null);
+    const [startX, setStartX] = useState(0);
     const steps = [
         {
             vacancy:{
@@ -78,17 +81,43 @@ function Carousel() {
         }
     ];
 
-    const [activeStep, setActiveStep] = useState(0);
-
     const handleStepClick = (stepIndex) => {
         setActiveStep(stepIndex);
+    };
+
+    const handleTouchStart = (event) => {
+        setStartX(event.touches[0].clientX);
+    };
+
+    const handleTouchMove = (event) => {
+        const currentX = event.touches[0].clientX;
+        const diff = startX - currentX;
+        if(Math.abs(diff)>40){
+            setSwipeDirection(diff > 0 ? -1 : 1);
+        }
+    };
+
+    const handleTouchEnd = () => {
+        if (Math.abs(swipeDirection) === 1) {
+            const newStep = activeStep - swipeDirection;
+            if (newStep >= 0 && newStep < steps.length) {
+                setActiveStep(newStep);
+            }
+        }
+        setSwipeDirection(null);
     };
 
     return (
         <div>
             <h3 className="carousel__title">{t("carouselTitle")}</h3>
             <div className="wrap">
-                <div className="viewbox">
+                <div
+                    className="viewbox"
+                    ref={carouselRef}
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleTouchEnd}
+                >
                     <div className="steps" style={{ left: -activeStep * 100 + '%' }}>
                         {steps.map((step, index) => (
                             <div key={index} className={`step`}>
