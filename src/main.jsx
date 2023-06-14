@@ -17,7 +17,7 @@ import MainLayout from "./layouts/main-layout";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <Suspense fallback={<div>Loading...</div>}>
-      <HashRouter>
+      <BrowserRouter>
           <Routes>
               <Route path={"/mentory-page"} element={<MainLayout/>}>
                   <Route path="/mentory-page" element={<Home/>}/>
@@ -25,7 +25,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               </Route>
               <Route path="/mentory-page/:lesson/:lessonID" element={<LessonMore/>}/>
           </Routes>
-      </HashRouter>
+          <Footer/>
+      </BrowserRouter>
       </Suspense>
   </React.StrictMode>,
 )

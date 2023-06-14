@@ -234,7 +234,7 @@ const LessonMore = () => {
         },
     ];
     const list = ["Data_Analysis","Frontend","C_Sharp","QA_Engineering"]
-    const path =window.location.hash.split('/')
+    const path =window.location.pathname.split('/')
     const lessonIndex = list.indexOf(path[path.length-2])
     const lessonInfo = backInfo[lessonIndex]
     return (

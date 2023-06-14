@@ -1,9 +1,8 @@
 import React from 'react';
 import "./index.css"
 import Instagram from "../../assets/footer__links/instagram.svg"
-import Youtube from "../../assets/footer__links/youtube.svg"
 import Linkedin from "../../assets/footer__links/linkedin.svg"
-import Twitter from "../../assets/footer__links/twitter.svg"
+import Whatsapp from "../../assets/footer__links/Untitled.png"
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -48,6 +47,9 @@ const Footer = () => {
                             </a>
                             <a href="https://www.linkedin.com/company/mentoryedu/">
                                 <img src={Linkedin} alt=""/>
+                            </a>
+                            <a href="https://wa.me/+77770222988">
+                                <img src={Whatsapp} alt=""/>
                             </a>
                         </div>
                     </div>
