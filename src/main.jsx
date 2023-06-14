@@ -1,7 +1,7 @@
 import React, {Suspense} from 'react'
 import ReactDOM from 'react-dom/client'
 import {
-    HashRouter,Route,Routes,
+    BrowserRouter,Route,Routes,
 } from "react-router-dom";
 import './index.css'
 import Header from "./components/header";
@@ -17,7 +17,7 @@ import MainLayout from "./layouts/main-layout";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <Suspense fallback={<div>Loading...</div>}>
-      <HashRouter>
+      <BrowserRouter>
           <Routes>
               <Route path={"/mentory-page"} element={<MainLayout/>}>
                   <Route path="/mentory-page" element={<Home/>}/>
@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               </Route>
               <Route path="/mentory-page/:lesson/:lessonID" element={<LessonMore/>}/>
           </Routes>
-      </HashRouter>
+      </BrowserRouter>
       </Suspense>
   </React.StrictMode>,
 )
